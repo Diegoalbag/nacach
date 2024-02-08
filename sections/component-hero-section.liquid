@@ -1,0 +1,47 @@
+<div
+  x-data="HeroSection"
+  class="aw-flex aw-bg-gradient-to-b aw-from-orange-100 aw-to-yellow-50 aw-px-5 aw-py-14"
+>
+  <div class="aw-mx-auto aw-bg-gray-100 aw-flex-col aw-justify-start aw-items-center lg:aw-items-start aw-gap-6 aw-inline-flex">
+    <div class="">
+      <h2 
+        class="aw-text-center lg:aw-text-left aw-text-pink-600 !aw-text-3xl lg:!aw-text-5xl !aw-font-bold aw-uppercase aw-leading-10"
+      >Effortless Wax, <br> Everytime.</h2>
+      <p
+        class="aw-text-center aw-text-zinc-800 aw-text-base aw-font-medium aw-leading-snug"
+      >Elevate your business with wax made in Italy and crafted for excellence.</p>
+    </div>
+    <button
+      type="button"
+      class="aw-px-20 aw-py-4 aw-bg-pink-600 aw-rounded-md aw-text-center aw-text-white aw-text-sm lg:!aw-text-2xl aw-font-medium aw-uppercase aw-leading-none aw-tracking-wide">
+      Buy Now
+    </button>
+  </div>
+  <div class="aw-rounded-lg aw-overflow-hidden">
+    <video 
+      class="aw-w-full"
+      autoplay 
+      loop 
+      muted
+      playsinline
+      src="{{ section.settings.video_url.sources[0].url }}"
+    ></video>
+</div>
+
+{% schema %}
+  {
+    "name": "Hero Section",
+    "settings": [
+      {
+        "type": "video",
+        "id": "video_url",
+        "label": "Video"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Hero Section"
+      }
+    ]
+  }
+{% endschema %}

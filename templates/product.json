@@ -1,1 +1,220 @@
-{"sections":{"main":{"type":"product-template","blocks":{"1513760820453":{"type":"tab_desc","settings":{"title":"DESCRIPTION","open_tab_by_default":true}},"92e8c0f1-0573-4845-adce-f6294e437eaf":{"type":"tab_same_html","disabled":true,"settings":{"title":"INSTRUCTIONS","html":"","open_tab_by_default":false}},"017db7bd-863f-4648-af13-a303a19935ec":{"type":"tab_review","disabled":true,"settings":{"title":"INGREDIENTS","open_tab_by_default":false}},"1513761234395":{"type":"tab_same_html","disabled":true,"settings":{"title":"ADDITIONAL INFORMATION","html":"<table class=\"tt-table-03\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td>Color:<\/td>\n\t\t\t<td>Blue, Purple, White<\/td>\n\t\t<\/tr>\n\t\t<tr>\n\t\t\t<td>Size:<\/td>\n\t\t\t<td>20, 24<\/td>\n\t\t<\/tr>\n\t\t<tr>\n\t\t\t<td>Material:<\/td>\n\t\t\t<td>100% Polyester<\/td>\n\t\t<\/tr>\n\t<\/tbody>\n<\/table>","open_tab_by_default":false}},"1571175093640":{"type":"related_products_type2","disabled":true,"settings":{"fullscreen":false,"titleincenter":false,"title":"RELATED PRODUCTS","product_upsell_collection_count":"8","slickdesktoptoshow":"4"}},"1580737710022":{"type":"recently_view_products","disabled":true,"settings":{"fullscreen":false,"titleincenter":false,"title":"RECENTLY VIEWED PRODUCTS","product_upsell_collection_count":"8","slickdesktoptoshow":"4"}}},"block_order":["1513760820453","92e8c0f1-0573-4845-adce-f6294e437eaf","017db7bd-863f-4648-af13-a303a19935ec","1513761234395","1571175093640","1580737710022"],"settings":{"page_design":"product_page_3_design","full_width_description":"default","history":true,"show_badge_new":true,"show_badge_featured":true,"show_review":true,"show_share_buttons":false,"show_tax_text":true,"use_select_button":false,"gallery_no_zoom":true,"gallery_scroll":true,"stickygallery":true,"mobiledots":true,"gallery_type":"vertical","show_thumbnails":true,"show_thumbnails_arrows":true,"show_thumbnails_zoom":true,"show_product_main_info":true,"show_sku":false,"show_qiantity":false,"show_trust_badge":true,"image_l":"shopify:\/\/shop_images\/cruelty-free_5b79ff07-abcf-410e-a59d-894d7330d80f.png","image_max_width":"541","image_max_width_m":"541","designoption1":"getButtonHtml","designoption2":"getButtonHtml","designoption3":"getButtonHtml","show_product_info":true,"show_product_vendor":true,"show_product_type":true,"show_product_barcode":true,"show_product_tags":true,"product_tab_tags":"Vintage, Awesome, Summer, Beachwear, Sunglasses, Winter, Shorts, Cool, Nice","product_item_show_wishlist":true,"product_item_show_compare":true,"show_sizechart":false,"btnname":"<span class=\"icon-f-09\"><\/span> Size guide","popupcontent":"<h6 class=\"tt-title\">SIZE GUIDE<\/h6>\nThis is an approximate conversion table to help you find your size.\n<div class=\"tt-table-responsive-md\">\n\t<table class=\"tt-table-modal-info\">\n\t\t<thead>\n\t\t\t<tr>\n\t\t\t\t<th>Italian<\/th>\n\t\t\t\t<th>Spanish<\/th>\n\t\t\t\t<th>German<\/th>\n\t\t\t\t<th>UK<\/th>\n\t\t\t\t<th>US<\/th>\n\t\t\t\t<th>Japanese<\/th>\n\t\t\t\t<th>Chinese<\/th>\n\t\t\t\t<th>Russian<\/th>\n\t\t\t\t<th>Korean<\/th>\n\t\t\t<\/tr>\n\t\t<\/thead>\n\t\t<tbody>\n\t\t\t<tr>\n\t\t\t\t<td>34<\/td>\n\t\t\t\t<td>30<\/td>\n\t\t\t\t<td>28<\/td>\n\t\t\t\t<td>4<\/td>\n\t\t\t\t<td>00<\/td>\n\t\t\t\t<td>3<\/td>\n\t\t\t\t<td>155\/75A<\/td>\n\t\t\t\t<td>36<\/td>\n\t\t\t\t<td>44<\/td>\n\t\t\t<\/tr>\n\t\t\t<tr>\n\t\t\t\t<td>36<\/td>\n\t\t\t\t<td>32<\/td>\n\t\t\t\t<td>30<\/td>\n\t\t\t\t<td>6<\/td>\n\t\t\t\t<td>0<\/td>\n\t\t\t\t<td>5<\/td>\n\t\t\t\t<td>155\/80A<\/td>\n\t\t\t\t<td>38<\/td>\n\t\t\t\t<td>44<\/td>\n\t\t\t<\/tr>\n\t\t\t<tr>\n\t\t\t\t<td>38<\/td>\n\t\t\t\t<td>34<\/td>\n\t\t\t\t<td>32<\/td>\n\t\t\t\t<td>8<\/td>\n\t\t\t\t<td>2<\/td>\n\t\t\t\t<td>7<\/td>\n\t\t\t\t<td>160\/84A<\/td>\n\t\t\t\t<td>40<\/td>\n\t\t\t\t<td>55<\/td>\n\t\t\t<\/tr>\n\t\t\t<tr>\n\t\t\t\t<td>40<\/td>\n\t\t\t\t<td>36<\/td>\n\t\t\t\t<td>34<\/td>\n\t\t\t\t<td>10<\/td>\n\t\t\t\t<td>4<\/td>\n\t\t\t\t<td>9<\/td>\n\t\t\t\t<td>165\/88A<\/td>\n\t\t\t\t<td>42<\/td>\n\t\t\t\t<td>55<\/td>\n\t\t\t<\/tr>\n\t\t\t<tr>\n\t\t\t\t<td>42<\/td>\n\t\t\t\t<td>38<\/td>\n\t\t\t\t<td>36<\/td>\n\t\t\t\t<td>12<\/td>\n\t\t\t\t<td>6<\/td>\n\t\t\t\t<td>11<\/td>\n\t\t\t\t<td>170\/92A<\/td>\n\t\t\t\t<td>44<\/td>\n\t\t\t\t<td>66<\/td>\n\t\t\t<\/tr>\n\t\t\t<tr>\n\t\t\t\t<td>44<\/td>\n\t\t\t\t<td>40<\/td>\n\t\t\t\t<td>38<\/td>\n\t\t\t\t<td>14<\/td>\n\t\t\t\t<td>8<\/td>\n\t\t\t\t<td>13<\/td>\n\t\t\t\t<td>175\/96A<\/td>\n\t\t\t\t<td>46<\/td>\n\t\t\t\t<td>66<\/td>\n\t\t\t<\/tr>\n\t\t\t<tr>\n\t\t\t\t<td>46<\/td>\n\t\t\t\t<td>42<\/td>\n\t\t\t\t<td>40<\/td>\n\t\t\t\t<td>16<\/td>\n\t\t\t\t<td>10<\/td>\n\t\t\t\t<td>15<\/td>\n\t\t\t\t<td>170\/98A<\/td>\n\t\t\t\t<td>48<\/td>\n\t\t\t\t<td>77<\/td>\n\t\t\t<\/tr>\n\t\t\t<tr>\n\t\t\t\t<td>48<\/td>\n\t\t\t\t<td>44<\/td>\n\t\t\t\t<td>42<\/td>\n\t\t\t\t<td>18<\/td>\n\t\t\t\t<td>12<\/td>\n\t\t\t\t<td>17<\/td>\n\t\t\t\t<td>170\/100B<\/td>\n\t\t\t\t<td>50<\/td>\n\t\t\t\t<td>77<\/td>\n\t\t\t<\/tr>\n\t\t\t<tr>\n\t\t\t\t<td>50<\/td>\n\t\t\t\t<td>46<\/td>\n\t\t\t\t<td>44<\/td>\n\t\t\t\t<td>20<\/td>\n\t\t\t\t<td>14<\/td>\n\t\t\t\t<td>19<\/td>\n\t\t\t\t<td>175\/100B<\/td>\n\t\t\t\t<td>52<\/td>\n\t\t\t\t<td>88<\/td>\n\t\t\t<\/tr>\n\t\t\t<tr>\n\t\t\t\t<td>52<\/td>\n\t\t\t\t<td>48<\/td>\n\t\t\t\t<td>46<\/td>\n\t\t\t\t<td>22<\/td>\n\t\t\t\t<td>16<\/td>\n\t\t\t\t<td>21<\/td>\n\t\t\t\t<td>180\/104B<\/td>\n\t\t\t\t<td>54<\/td>\n\t\t\t\t<td>88<\/td>\n\t\t\t<\/tr>\n\t\t<\/tbody>\n\t<\/table>\n<\/div>","show_shipping":true,"btnname2":"<span class=\"icon-f-44\"><\/span> Shipping","popupcontentshipping":"<h2>SHIPPING POLICY<\/h2>\n<p data-uw-styling-context=\"true\">\n  All orders are shipped within 24-48 hours if placed before 2:00 p.m.\n  EST Monday - Friday unless there is a fraudulent warning or\n  shipping address error. Please be aware UPS does not pick up packages\n  on weekends or holidays. <span><strong data-uw-styling-context=\"true\"> All shipments have real-time tracking and verified\n      tracking numbers so you can track your items 24\/7 with delivery\n      confirmation<\/strong><\/span><span data-uw-styling-context=\"true\">. When shipped, orders will take a few hours to update tracking. You will\n    get a shipping confirmation once shipped. Please allow until the next\n    business day to start tracking your package.<\/span>\n<\/p> <br>\n<h3 data-uw-styling-context=\"true\" data-uw-rm-heading=\"level\" role=\"heading\" aria-level=\"2\">\n  SHIPPING OPTIONS\n<\/h3>\n<p data-uw-styling-context=\"true\">\n  <b data-uw-styling-context=\"true\">PLEASE NOTE THAT ANY ORDER AFTER 2:00 P.M. ON FRIDAY WILL NOT SHIP UNTIL\n    FOLLOWING BUSINESS DAY. <\/b>Double-check that your address is correct, we are not responsible for lost\n  items.\n<\/p>\n<ul>\n  <li data-uw-styling-context=\"true\">\n    <strong data-uw-styling-context=\"true\">Ground:<\/strong><span> <\/span>5-7 day delivery\n  <\/li>\n<\/ul><br>\n<h3 data-uw-styling-context=\"true\">\n  SHIPPING TO PO BOXES AND APO or FPO ADDRESSES\n<\/h3>\n<p data-uw-styling-context=\"true\">\n  UPS does not ship to P.O. BOX addresses and\/or APO or FPO addresses.\n<\/p><br>\n<h3 data-uw-styling-context=\"true\">FREE SHIPPING<\/h3>\n<p data-uw-styling-context=\"true\">\n  <span data-uw-styling-context=\"true\">Free Shipping applies ONLY for the US continental territory. It doesn’t\n    include Alaska, Hawaii, Puerto Rico or any US island.<\/span> Should UPS encounter any delays, Nacach Wax cannot be held\n  responsible.\n<\/p><br>\n<h3 data-uw-styling-context=\"true\">TRACKING YOUR ORDER<\/h3>\n<p data-uw-styling-context=\"true\">\n  Nacach Wax will update your tracking number via email, all orders come\n  with a verified tracking number and link. Tracking may take a few hours to\n  update. If there is a problem with your tracking number or package delivery,\n  please contact the courier directly prior to contacting us. Nacach Wax, does\n  not control the courier trucks, so once it leaves our facility you will need\n  to contact them for any issues.\n<\/p>\n<div>\n  <div class=\"table-wrapper\">\n    <table height=\"117\" width=\"540\">\n      <tbody>\n        <tr>\n          <td style=\"width: 192px\">\n            <div><strong data-uw-styling-context=\"true\">COURIER<\/strong><\/div>\n          <\/td>\n          <td style=\"width: 338px\">\n            <div>\n              <strong data-uw-styling-context=\"true\">PHONE NUMBER<\/strong>\n            <\/div>\n          <\/td>\n        <\/tr>\n        <tr>\n          <td style=\"width: 192px\">\n            <div data-uw-styling-context=\"true\">USPS<\/div>\n          <\/td>\n          <td style=\"width: 338px\">\n            <div>\n              <a rel=\"noopener noreferrer\" target=\"_blank\" data-uw-styling-context=\"true\" data-uw-rm-kbnav=\"anohref\" tabindex=\"0\">1-800-275-8777<\/a>\n            <\/div>\n          <\/td>\n        <\/tr>\n        <tr>\n          <td style=\"width: 192px\">\n            <div data-uw-styling-context=\"true\">UPS<\/div>\n          <\/td>\n          <td style=\"width: 338px\">\n            <div data-uw-styling-context=\"true\">1-800-742-5877<\/div>\n          <\/td>\n        <\/tr>\n        <tr>\n          <td style=\"width: 192px\"><\/td>\n          <td style=\"width: 338px\">\n            <div><\/div>\n          <\/td>\n        <\/tr>\n        <tr>\n          <td style=\"width: 192px\"><\/td>\n          <td style=\"width: 338px\"><\/td>\n        <\/tr>\n      <\/tbody>\n    <\/table>\n  <\/div>\n<\/div>\n<h3>\n  <span style=\"\n      color: #ffffff;\n      background: #000000;\n      clip: rect(1px, 1px, 1px, 1px);\n      clip-path: inset(50%);\n      height: 1px;\n      width: 1px;\n      margin: -1px;\n      overflow: hidden;\n      padding: 0;\n      position: absolute;\n    \" class=\"data-uw-rm-autofix-hide\" data-uw-rm-ignore=\"\">Empty heading<\/span>\n<\/h3>\n<h3 data-uw-styling-context=\"true\">SHIPPING TERMS & CONDITIONS<\/h3>\n<p data-uw-styling-context=\"true\">\n  All orders MUST be shipped to the delivery address on your order.<span> <\/span><strong data-uw-styling-context=\"true\">We cannot change the shipping address in your transaction to any other\n    address after purchase.<\/strong><span> <\/span>It is your responsibility to make sure your information is\n  accurate when placing an order. Any mailing address mistakes on your part are\n  not the responsibility of Nacach Wax.\n<\/p>\n<p data-uw-styling-context=\"true\">\n  Any orders with Fraud alert will not be shipped until all details and\n  information are verified. No exceptions. We have a fraud prevention system to\n  protect every party.\n<\/p><br>\n<h3>\n  <span data-uw-styling-context=\"true\">PRODUCTS LOST OR DAMAGED<\/span> \n<\/h3>\n<p data-uw-styling-context=\"true\">\n  We can't guarantee the performance of the shipping carriers,  but we\n  will do our part to make sure you get your order delivered on time and without\n  any damage. At times, there are unforeseeable <span data-uw-styling-context=\"true\">acts of nature and others issues that may arise, and the\n    shipping carrier may not be able to perform their duties to get\n    the delivery on time. In the rare event that this happens, Nacach Wax,<\/span> cannot be held liable for late, lost, stolen, damaged packages. We\n  will do everything we can do assist with the delivery of your products.\n  However, we cannot be held accountable for the shipping carriers actions and\n  cannot issue refunds for shipping charges for delayed packages.\n<\/p>\n<p data-uw-styling-context=\"true\">\n  Delivery confirmation is provided on all orders within the U.S. Delivery\n  Confirmation includes notification of a sent package and are successfully\n  delivered package. Real-time tracking is with delivery confirmation.\n<\/p>\n<p data-uw-styling-context=\"true\">\n  Nacach Wax is not responsible for late or lost packages in the mail. This\n  is a carrier's matter. Once we have shipped the items with a tracking number\n  and it has been marked as delivered by the carrier, we do not provide refunds.\n  Please file a claim with the carrier by visiting their respective websites.\n  99% of all orders are delivered on time and are not lost.\n<\/p>\n<p data-uw-styling-context=\"true\">\n  Shipping charges are non-refundable. You are responsible for any additional\n  shipping charges during an exchange. If you send back an exchange, please\n  include a note with what items you wish to receive in exchange, the address to\n  send them to, the date your order was placed online, along with your email\n  address. \n<\/p><br>\n<h3 data-uw-styling-context=\"true\">BROKEN OR DAMAGED ITEM\/S INSIDE MY BOX<\/h3>\n<p>\n  <span data-uw-styling-context=\"true\">We can't guarantee the performance of the shipping carriers,  but\n    we will do our best to make sure you get your order delivered on time and\n    without any damage. At times, there are unforeseeable <\/span><span data-uw-styling-context=\"true\">acts of nature and others issues that may arise that are out of our\n    control. In the event that you receive your box and you realize that there\n    are broken or damaged items inside your box, you MUST place all the items\n    back in the box in the same conditions as they arrived and call us\n    immediately to request a Return Label.<\/span>\n<\/p>\n<p>\n  <span data-uw-styling-context=\"true\">No refunds or exchange will be made if any of the returned items are lost\n    or missing, <\/span>\n<\/p><br>\n<h3 data-uw-styling-context=\"true\">DELIVERED BUT NOT DELIVERED<\/h3>\n<p>\n  <span data-uw-styling-context=\"true\">We're here to help! All of our shipments include Delivery Confirmation on\n    every order to guarantee delivery. If the tracking information confirms\n    that your order has been delivered to your address but you have not\n    received your order, <\/span><strong data-uw-styling-context=\"true\">please contact couriers for further assistance. <\/strong><span data-uw-styling-context=\"true\">We can not be held accountable for packages when the tracking\n    information states the package has been delivered to your order\n    address. <\/span>\n<\/p>\n<p>\n  <span data-uw-styling-context=\"true\">In some cases, carriers will mark a package as “Delivered” when it is still\n    \"Out For Delivery\" that day. We recommend checking for a “Delivery\n    Attempted” notification left by the carrier; they may be attempting to reach\n    you to deliver your package.<\/span>\n<\/p><br>\n<h3 data-uw-styling-context=\"true\"> FRAUD PREVENTION<\/h3>\n<p>\n  <span data-uw-styling-context=\"true\">Nacach Wax is Level 1 PCI DSS compliant and 100 % safe and\n    secure for online payment processing.  We work diligently to\n    protect the safety and security of our customers and our assets.<\/span><br role=\"presentation\" data-uw-rm-sr=\"\"><span data-uw-styling-context=\"true\">All orders are at our discretion to be checked for fraudulent activity on\n    varying levels of research. If we are unable to verify your payment through\n    the information you have provided, we will communicate what is needed for us\n    to move forward with the order process. Additional information, including\n    but not limited to, a photo ID, passport and\/or payment details may be\n    requested.<\/span>\n<\/p>","show_message":true,"btnname3":"<span class=\"icon-f-72\"><\/span> Ask about this product","prpage_tree_col_html":"<div class=\"tt-services-aside\">\n\t<a href=\"#\" class=\"tt-services-block\">\n\t\t<div class=\"tt-col-icon\">\n\t\t\t<i class=\"icon-f-48\"><\/i>\n\t\t<\/div>\n\t\t<div class=\"tt-col-description\">\n\t\t\t<h4 class=\"tt-title\">FREE SHIPPING<\/h4>\n\t\t\t<p>Free shipping on all US order or order above $99<\/p>\n\t\t<\/div>\n\t<\/a>\n\t<a href=\"#\" class=\"tt-services-block\">\n\t\t<div class=\"tt-col-icon\">\n\t\t\t<i class=\"icon-f-35\"><\/i>\n\t\t<\/div>\n\t\t<div class=\"tt-col-description\">\n\t\t\t<h4 class=\"tt-title\">SUPPORT 24\/7<\/h4>\n\t\t\t<p>Contact us 24 hours a day, 7 days a week<\/p>\n\t\t<\/div>\n\t<\/a>\n\t<a href=\"#\" class=\"tt-services-block\">\n\t\t<div class=\"tt-col-icon\">\n\t\t\t<i class=\"icon-e-09\"><\/i>\n\t\t<\/div>\n\t\t<div class=\"tt-col-description\">\n\t\t\t<h4 class=\"tt-title\">30 DAYS RETURN<\/h4>\n\t\t\t<p>Simply return it within 30 days for an exchange.<\/p>\n\t\t<\/div>\n\t<\/a>\n<\/div>","show_custom_related":true,"custom_related_fullscreen":false,"custom_related_titleincenter":false,"custom_related_title":"CUSTOM PRODUCTS","custom_related_length":"8","custom_related_slickdesktoptoshow":"4"}},"loox-product-reviews-app-section":{"type":"apps","blocks":{"loox-product-reviews":{"type":"shopify:\/\/apps\/loox-reviews\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e","settings":{"only_photos":false,"aggregated":false,"limit":20,"hide_thumbnails":false,"maxwidth":1080}}},"block_order":["loox-product-reviews"],"disabled":true,"settings":{}},"e4e4ffd4-4395-4648-9edc-4fc8f296600a":{"type":"instruccions","blocks":{"d11729b7-7e0d-4aaf-9125-72e2e8b902b1":{"type":"step","settings":{"image":"shopify:\/\/shop_images\/6bb25d566155609f598ab45b1a8c3a9b.png","title":"","content":"<p>Warm the wax in a wax warmer until it has melted and reached a liquid consistency. To avoid burns, always test the wax temperature on a small area before applying it.<\/p>"}},"8f908767-e8c4-4f2b-9bca-ab2ade1313a0":{"type":"step","settings":{"image":"shopify:\/\/shop_images\/f6c643ae33b19035b506ee35078ae101.png","title":"","content":"<p>Gently apply one of our\u2028Pre-Wax Care products to the area.<\/p>"}},"036c741c-d5f4-459e-b32a-d5d8ffae4fa6":{"type":"step","settings":{"image":"shopify:\/\/shop_images\/c6470d5418ab06e68b80b3f6fe14fcc3.png","title":"","content":"<p>Each and every time dip a new spatula into the wax container and using a thin coating of wax, apply it in the direction of hair development.<\/p>"}},"30a63492-038c-4cdd-81bb-96ddc82a6b23":{"type":"step","settings":{"image":"shopify:\/\/shop_images\/c6470d5418ab06e68b80b3f6fe14fcc3.png","title":"","content":"<p>Apply a non-woven or muslin strip and firmly press it in place. Lift a strip's border and pull it off in one swift motion, this time against the hair growth.<\/p>"}},"1a594f82-85f8-4164-bec6-d4f21b621ef9":{"type":"step","settings":{"image":"shopify:\/\/shop_images\/c6470d5418ab06e68b80b3f6fe14fcc3.png","title":"","content":"<p>To finish the treatment, gently apply the Nacach Post Wax Refreshing Cream massage smooth until absorbed.<\/p>"}}},"block_order":["d11729b7-7e0d-4aaf-9125-72e2e8b902b1","8f908767-e8c4-4f2b-9bca-ab2ade1313a0","036c741c-d5f4-459e-b32a-d5d8ffae4fa6","30a63492-038c-4cdd-81bb-96ddc82a6b23","1a594f82-85f8-4164-bec6-d4f21b621ef9"],"disabled":true,"settings":{"title":"How To Use Soft Wax"}},"61606b8d-352c-4727-9646-1dd4fd5d58b5":{"type":"product-reviews","settings":{}},"f6d94845-0fc8-4503-855b-835dcbddeaf5":{"type":"product-recommendations-aws","settings":{"show_product_recommendations":true,"heading":"You may also like"}}},"order":["main","loox-product-reviews-app-section","e4e4ffd4-4395-4648-9edc-4fc8f296600a","61606b8d-352c-4727-9646-1dd4fd5d58b5","f6d94845-0fc8-4503-855b-835dcbddeaf5"]}
+{
+  "sections": {
+    "main": {
+      "type": "product-template",
+      "blocks": {
+        "1513760820453": {
+          "type": "tab_desc",
+          "settings": {
+            "title": "DESCRIPTION",
+            "open_tab_by_default": true
+          }
+        },
+        "92e8c0f1-0573-4845-adce-f6294e437eaf": {
+          "type": "tab_same_html",
+          "disabled": true,
+          "settings": {
+            "title": "INSTRUCTIONS",
+            "html": "",
+            "open_tab_by_default": false
+          }
+        },
+        "017db7bd-863f-4648-af13-a303a19935ec": {
+          "type": "tab_review",
+          "disabled": true,
+          "settings": {
+            "title": "INGREDIENTS",
+            "open_tab_by_default": false
+          }
+        },
+        "1513761234395": {
+          "type": "tab_same_html",
+          "disabled": true,
+          "settings": {
+            "title": "ADDITIONAL INFORMATION",
+            "html": "<table class=\"tt-table-03\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td>Color:<\/td>\n\t\t\t<td>Blue, Purple, White<\/td>\n\t\t<\/tr>\n\t\t<tr>\n\t\t\t<td>Size:<\/td>\n\t\t\t<td>20, 24<\/td>\n\t\t<\/tr>\n\t\t<tr>\n\t\t\t<td>Material:<\/td>\n\t\t\t<td>100% Polyester<\/td>\n\t\t<\/tr>\n\t<\/tbody>\n<\/table>",
+            "open_tab_by_default": false
+          }
+        },
+        "1571175093640": {
+          "type": "related_products_type2",
+          "disabled": true,
+          "settings": {
+            "fullscreen": false,
+            "titleincenter": false,
+            "title": "RELATED PRODUCTS",
+            "product_upsell_collection_count": "8",
+            "slickdesktoptoshow": "4"
+          }
+        },
+        "1580737710022": {
+          "type": "recently_view_products",
+          "disabled": true,
+          "settings": {
+            "fullscreen": false,
+            "titleincenter": false,
+            "title": "RECENTLY VIEWED PRODUCTS",
+            "product_upsell_collection_count": "8",
+            "slickdesktoptoshow": "4"
+          }
+        }
+      },
+      "block_order": [
+        "1513760820453",
+        "92e8c0f1-0573-4845-adce-f6294e437eaf",
+        "017db7bd-863f-4648-af13-a303a19935ec",
+        "1513761234395",
+        "1571175093640",
+        "1580737710022"
+      ],
+      "settings": {
+        "page_design": "product_page_3_design",
+        "full_width_description": "default",
+        "history": true,
+        "show_badge_new": true,
+        "show_badge_featured": true,
+        "show_review": true,
+        "show_share_buttons": false,
+        "show_tax_text": true,
+        "use_select_button": false,
+        "gallery_no_zoom": true,
+        "gallery_scroll": true,
+        "stickygallery": true,
+        "mobiledots": true,
+        "gallery_type": "vertical",
+        "show_thumbnails": true,
+        "show_thumbnails_arrows": true,
+        "show_thumbnails_zoom": true,
+        "show_product_main_info": true,
+        "show_sku": false,
+        "show_qiantity": false,
+        "show_trust_badge": true,
+        "image_l": "shopify:\/\/shop_images\/cruelty-free_5b79ff07-abcf-410e-a59d-894d7330d80f.png",
+        "image_max_width": "541",
+        "image_max_width_m": "541",
+        "designoption1": "getButtonHtml",
+        "designoption2": "getButtonHtml",
+        "designoption3": "getButtonHtml",
+        "show_product_info": true,
+        "show_product_vendor": true,
+        "show_product_type": true,
+        "show_product_barcode": true,
+        "show_product_tags": true,
+        "product_tab_tags": "Vintage, Awesome, Summer, Beachwear, Sunglasses, Winter, Shorts, Cool, Nice",
+        "product_item_show_wishlist": true,
+        "product_item_show_compare": true,
+        "show_sizechart": false,
+        "btnname": "<span class=\"icon-f-09\"><\/span> Size guide",
+        "popupcontent": "<h6 class=\"tt-title\">SIZE GUIDE<\/h6>\nThis is an approximate conversion table to help you find your size.\n<div class=\"tt-table-responsive-md\">\n\t<table class=\"tt-table-modal-info\">\n\t\t<thead>\n\t\t\t<tr>\n\t\t\t\t<th>Italian<\/th>\n\t\t\t\t<th>Spanish<\/th>\n\t\t\t\t<th>German<\/th>\n\t\t\t\t<th>UK<\/th>\n\t\t\t\t<th>US<\/th>\n\t\t\t\t<th>Japanese<\/th>\n\t\t\t\t<th>Chinese<\/th>\n\t\t\t\t<th>Russian<\/th>\n\t\t\t\t<th>Korean<\/th>\n\t\t\t<\/tr>\n\t\t<\/thead>\n\t\t<tbody>\n\t\t\t<tr>\n\t\t\t\t<td>34<\/td>\n\t\t\t\t<td>30<\/td>\n\t\t\t\t<td>28<\/td>\n\t\t\t\t<td>4<\/td>\n\t\t\t\t<td>00<\/td>\n\t\t\t\t<td>3<\/td>\n\t\t\t\t<td>155\/75A<\/td>\n\t\t\t\t<td>36<\/td>\n\t\t\t\t<td>44<\/td>\n\t\t\t<\/tr>\n\t\t\t<tr>\n\t\t\t\t<td>36<\/td>\n\t\t\t\t<td>32<\/td>\n\t\t\t\t<td>30<\/td>\n\t\t\t\t<td>6<\/td>\n\t\t\t\t<td>0<\/td>\n\t\t\t\t<td>5<\/td>\n\t\t\t\t<td>155\/80A<\/td>\n\t\t\t\t<td>38<\/td>\n\t\t\t\t<td>44<\/td>\n\t\t\t<\/tr>\n\t\t\t<tr>\n\t\t\t\t<td>38<\/td>\n\t\t\t\t<td>34<\/td>\n\t\t\t\t<td>32<\/td>\n\t\t\t\t<td>8<\/td>\n\t\t\t\t<td>2<\/td>\n\t\t\t\t<td>7<\/td>\n\t\t\t\t<td>160\/84A<\/td>\n\t\t\t\t<td>40<\/td>\n\t\t\t\t<td>55<\/td>\n\t\t\t<\/tr>\n\t\t\t<tr>\n\t\t\t\t<td>40<\/td>\n\t\t\t\t<td>36<\/td>\n\t\t\t\t<td>34<\/td>\n\t\t\t\t<td>10<\/td>\n\t\t\t\t<td>4<\/td>\n\t\t\t\t<td>9<\/td>\n\t\t\t\t<td>165\/88A<\/td>\n\t\t\t\t<td>42<\/td>\n\t\t\t\t<td>55<\/td>\n\t\t\t<\/tr>\n\t\t\t<tr>\n\t\t\t\t<td>42<\/td>\n\t\t\t\t<td>38<\/td>\n\t\t\t\t<td>36<\/td>\n\t\t\t\t<td>12<\/td>\n\t\t\t\t<td>6<\/td>\n\t\t\t\t<td>11<\/td>\n\t\t\t\t<td>170\/92A<\/td>\n\t\t\t\t<td>44<\/td>\n\t\t\t\t<td>66<\/td>\n\t\t\t<\/tr>\n\t\t\t<tr>\n\t\t\t\t<td>44<\/td>\n\t\t\t\t<td>40<\/td>\n\t\t\t\t<td>38<\/td>\n\t\t\t\t<td>14<\/td>\n\t\t\t\t<td>8<\/td>\n\t\t\t\t<td>13<\/td>\n\t\t\t\t<td>175\/96A<\/td>\n\t\t\t\t<td>46<\/td>\n\t\t\t\t<td>66<\/td>\n\t\t\t<\/tr>\n\t\t\t<tr>\n\t\t\t\t<td>46<\/td>\n\t\t\t\t<td>42<\/td>\n\t\t\t\t<td>40<\/td>\n\t\t\t\t<td>16<\/td>\n\t\t\t\t<td>10<\/td>\n\t\t\t\t<td>15<\/td>\n\t\t\t\t<td>170\/98A<\/td>\n\t\t\t\t<td>48<\/td>\n\t\t\t\t<td>77<\/td>\n\t\t\t<\/tr>\n\t\t\t<tr>\n\t\t\t\t<td>48<\/td>\n\t\t\t\t<td>44<\/td>\n\t\t\t\t<td>42<\/td>\n\t\t\t\t<td>18<\/td>\n\t\t\t\t<td>12<\/td>\n\t\t\t\t<td>17<\/td>\n\t\t\t\t<td>170\/100B<\/td>\n\t\t\t\t<td>50<\/td>\n\t\t\t\t<td>77<\/td>\n\t\t\t<\/tr>\n\t\t\t<tr>\n\t\t\t\t<td>50<\/td>\n\t\t\t\t<td>46<\/td>\n\t\t\t\t<td>44<\/td>\n\t\t\t\t<td>20<\/td>\n\t\t\t\t<td>14<\/td>\n\t\t\t\t<td>19<\/td>\n\t\t\t\t<td>175\/100B<\/td>\n\t\t\t\t<td>52<\/td>\n\t\t\t\t<td>88<\/td>\n\t\t\t<\/tr>\n\t\t\t<tr>\n\t\t\t\t<td>52<\/td>\n\t\t\t\t<td>48<\/td>\n\t\t\t\t<td>46<\/td>\n\t\t\t\t<td>22<\/td>\n\t\t\t\t<td>16<\/td>\n\t\t\t\t<td>21<\/td>\n\t\t\t\t<td>180\/104B<\/td>\n\t\t\t\t<td>54<\/td>\n\t\t\t\t<td>88<\/td>\n\t\t\t<\/tr>\n\t\t<\/tbody>\n\t<\/table>\n<\/div>",
+        "show_shipping": true,
+        "btnname2": "<span class=\"icon-f-44\"><\/span> Shipping",
+        "popupcontentshipping": "<h2>SHIPPING POLICY<\/h2>\n<p data-uw-styling-context=\"true\">\n  All orders are shipped within 24-48 hours if placed before 2:00 p.m.\n  EST Monday - Friday unless there is a fraudulent warning or\n  shipping address error. Please be aware UPS does not pick up packages\n  on weekends or holidays. <span><strong data-uw-styling-context=\"true\"> All shipments have real-time tracking and verified\n      tracking numbers so you can track your items 24\/7 with delivery\n      confirmation<\/strong><\/span><span data-uw-styling-context=\"true\">. When shipped, orders will take a few hours to update tracking. You will\n    get a shipping confirmation once shipped. Please allow until the next\n    business day to start tracking your package.<\/span>\n<\/p> <br>\n<h3 data-uw-styling-context=\"true\" data-uw-rm-heading=\"level\" role=\"heading\" aria-level=\"2\">\n  SHIPPING OPTIONS\n<\/h3>\n<p data-uw-styling-context=\"true\">\n  <b data-uw-styling-context=\"true\">PLEASE NOTE THAT ANY ORDER AFTER 2:00 P.M. ON FRIDAY WILL NOT SHIP UNTIL\n    FOLLOWING BUSINESS DAY. <\/b>Double-check that your address is correct, we are not responsible for lost\n  items.\n<\/p>\n<ul>\n  <li data-uw-styling-context=\"true\">\n    <strong data-uw-styling-context=\"true\">Ground:<\/strong><span> <\/span>5-7 day delivery\n  <\/li>\n<\/ul><br>\n<h3 data-uw-styling-context=\"true\">\n  SHIPPING TO PO BOXES AND APO or FPO ADDRESSES\n<\/h3>\n<p data-uw-styling-context=\"true\">\n  UPS does not ship to P.O. BOX addresses and\/or APO or FPO addresses.\n<\/p><br>\n<h3 data-uw-styling-context=\"true\">FREE SHIPPING<\/h3>\n<p data-uw-styling-context=\"true\">\n  <span data-uw-styling-context=\"true\">Free Shipping applies ONLY for the US continental territory. It doesn’t\n    include Alaska, Hawaii, Puerto Rico or any US island.<\/span> Should UPS encounter any delays, Nacach Wax cannot be held\n  responsible.\n<\/p><br>\n<h3 data-uw-styling-context=\"true\">TRACKING YOUR ORDER<\/h3>\n<p data-uw-styling-context=\"true\">\n  Nacach Wax will update your tracking number via email, all orders come\n  with a verified tracking number and link. Tracking may take a few hours to\n  update. If there is a problem with your tracking number or package delivery,\n  please contact the courier directly prior to contacting us. Nacach Wax, does\n  not control the courier trucks, so once it leaves our facility you will need\n  to contact them for any issues.\n<\/p>\n<div>\n  <div class=\"table-wrapper\">\n    <table height=\"117\" width=\"540\">\n      <tbody>\n        <tr>\n          <td style=\"width: 192px\">\n            <div><strong data-uw-styling-context=\"true\">COURIER<\/strong><\/div>\n          <\/td>\n          <td style=\"width: 338px\">\n            <div>\n              <strong data-uw-styling-context=\"true\">PHONE NUMBER<\/strong>\n            <\/div>\n          <\/td>\n        <\/tr>\n        <tr>\n          <td style=\"width: 192px\">\n            <div data-uw-styling-context=\"true\">USPS<\/div>\n          <\/td>\n          <td style=\"width: 338px\">\n            <div>\n              <a rel=\"noopener noreferrer\" target=\"_blank\" data-uw-styling-context=\"true\" data-uw-rm-kbnav=\"anohref\" tabindex=\"0\">1-800-275-8777<\/a>\n            <\/div>\n          <\/td>\n        <\/tr>\n        <tr>\n          <td style=\"width: 192px\">\n            <div data-uw-styling-context=\"true\">UPS<\/div>\n          <\/td>\n          <td style=\"width: 338px\">\n            <div data-uw-styling-context=\"true\">1-800-742-5877<\/div>\n          <\/td>\n        <\/tr>\n        <tr>\n          <td style=\"width: 192px\"><\/td>\n          <td style=\"width: 338px\">\n            <div><\/div>\n          <\/td>\n        <\/tr>\n        <tr>\n          <td style=\"width: 192px\"><\/td>\n          <td style=\"width: 338px\"><\/td>\n        <\/tr>\n      <\/tbody>\n    <\/table>\n  <\/div>\n<\/div>\n<h3>\n  <span style=\"\n      color: #ffffff;\n      background: #000000;\n      clip: rect(1px, 1px, 1px, 1px);\n      clip-path: inset(50%);\n      height: 1px;\n      width: 1px;\n      margin: -1px;\n      overflow: hidden;\n      padding: 0;\n      position: absolute;\n    \" class=\"data-uw-rm-autofix-hide\" data-uw-rm-ignore=\"\">Empty heading<\/span>\n<\/h3>\n<h3 data-uw-styling-context=\"true\">SHIPPING TERMS & CONDITIONS<\/h3>\n<p data-uw-styling-context=\"true\">\n  All orders MUST be shipped to the delivery address on your order.<span> <\/span><strong data-uw-styling-context=\"true\">We cannot change the shipping address in your transaction to any other\n    address after purchase.<\/strong><span> <\/span>It is your responsibility to make sure your information is\n  accurate when placing an order. Any mailing address mistakes on your part are\n  not the responsibility of Nacach Wax.\n<\/p>\n<p data-uw-styling-context=\"true\">\n  Any orders with Fraud alert will not be shipped until all details and\n  information are verified. No exceptions. We have a fraud prevention system to\n  protect every party.\n<\/p><br>\n<h3>\n  <span data-uw-styling-context=\"true\">PRODUCTS LOST OR DAMAGED<\/span> \n<\/h3>\n<p data-uw-styling-context=\"true\">\n  We can't guarantee the performance of the shipping carriers,  but we\n  will do our part to make sure you get your order delivered on time and without\n  any damage. At times, there are unforeseeable <span data-uw-styling-context=\"true\">acts of nature and others issues that may arise, and the\n    shipping carrier may not be able to perform their duties to get\n    the delivery on time. In the rare event that this happens, Nacach Wax,<\/span> cannot be held liable for late, lost, stolen, damaged packages. We\n  will do everything we can do assist with the delivery of your products.\n  However, we cannot be held accountable for the shipping carriers actions and\n  cannot issue refunds for shipping charges for delayed packages.\n<\/p>\n<p data-uw-styling-context=\"true\">\n  Delivery confirmation is provided on all orders within the U.S. Delivery\n  Confirmation includes notification of a sent package and are successfully\n  delivered package. Real-time tracking is with delivery confirmation.\n<\/p>\n<p data-uw-styling-context=\"true\">\n  Nacach Wax is not responsible for late or lost packages in the mail. This\n  is a carrier's matter. Once we have shipped the items with a tracking number\n  and it has been marked as delivered by the carrier, we do not provide refunds.\n  Please file a claim with the carrier by visiting their respective websites.\n  99% of all orders are delivered on time and are not lost.\n<\/p>\n<p data-uw-styling-context=\"true\">\n  Shipping charges are non-refundable. You are responsible for any additional\n  shipping charges during an exchange. If you send back an exchange, please\n  include a note with what items you wish to receive in exchange, the address to\n  send them to, the date your order was placed online, along with your email\n  address. \n<\/p><br>\n<h3 data-uw-styling-context=\"true\">BROKEN OR DAMAGED ITEM\/S INSIDE MY BOX<\/h3>\n<p>\n  <span data-uw-styling-context=\"true\">We can't guarantee the performance of the shipping carriers,  but\n    we will do our best to make sure you get your order delivered on time and\n    without any damage. At times, there are unforeseeable <\/span><span data-uw-styling-context=\"true\">acts of nature and others issues that may arise that are out of our\n    control. In the event that you receive your box and you realize that there\n    are broken or damaged items inside your box, you MUST place all the items\n    back in the box in the same conditions as they arrived and call us\n    immediately to request a Return Label.<\/span>\n<\/p>\n<p>\n  <span data-uw-styling-context=\"true\">No refunds or exchange will be made if any of the returned items are lost\n    or missing, <\/span>\n<\/p><br>\n<h3 data-uw-styling-context=\"true\">DELIVERED BUT NOT DELIVERED<\/h3>\n<p>\n  <span data-uw-styling-context=\"true\">We're here to help! All of our shipments include Delivery Confirmation on\n    every order to guarantee delivery. If the tracking information confirms\n    that your order has been delivered to your address but you have not\n    received your order, <\/span><strong data-uw-styling-context=\"true\">please contact couriers for further assistance. <\/strong><span data-uw-styling-context=\"true\">We can not be held accountable for packages when the tracking\n    information states the package has been delivered to your order\n    address. <\/span>\n<\/p>\n<p>\n  <span data-uw-styling-context=\"true\">In some cases, carriers will mark a package as “Delivered” when it is still\n    \"Out For Delivery\" that day. We recommend checking for a “Delivery\n    Attempted” notification left by the carrier; they may be attempting to reach\n    you to deliver your package.<\/span>\n<\/p><br>\n<h3 data-uw-styling-context=\"true\"> FRAUD PREVENTION<\/h3>\n<p>\n  <span data-uw-styling-context=\"true\">Nacach Wax is Level 1 PCI DSS compliant and 100 % safe and\n    secure for online payment processing.  We work diligently to\n    protect the safety and security of our customers and our assets.<\/span><br role=\"presentation\" data-uw-rm-sr=\"\"><span data-uw-styling-context=\"true\">All orders are at our discretion to be checked for fraudulent activity on\n    varying levels of research. If we are unable to verify your payment through\n    the information you have provided, we will communicate what is needed for us\n    to move forward with the order process. Additional information, including\n    but not limited to, a photo ID, passport and\/or payment details may be\n    requested.<\/span>\n<\/p>",
+        "show_message": true,
+        "btnname3": "<span class=\"icon-f-72\"><\/span> Ask about this product",
+        "prpage_tree_col_html": "<div class=\"tt-services-aside\">\n\t<a href=\"#\" class=\"tt-services-block\">\n\t\t<div class=\"tt-col-icon\">\n\t\t\t<i class=\"icon-f-48\"><\/i>\n\t\t<\/div>\n\t\t<div class=\"tt-col-description\">\n\t\t\t<h4 class=\"tt-title\">FREE SHIPPING<\/h4>\n\t\t\t<p>Free shipping on all US order or order above $99<\/p>\n\t\t<\/div>\n\t<\/a>\n\t<a href=\"#\" class=\"tt-services-block\">\n\t\t<div class=\"tt-col-icon\">\n\t\t\t<i class=\"icon-f-35\"><\/i>\n\t\t<\/div>\n\t\t<div class=\"tt-col-description\">\n\t\t\t<h4 class=\"tt-title\">SUPPORT 24\/7<\/h4>\n\t\t\t<p>Contact us 24 hours a day, 7 days a week<\/p>\n\t\t<\/div>\n\t<\/a>\n\t<a href=\"#\" class=\"tt-services-block\">\n\t\t<div class=\"tt-col-icon\">\n\t\t\t<i class=\"icon-e-09\"><\/i>\n\t\t<\/div>\n\t\t<div class=\"tt-col-description\">\n\t\t\t<h4 class=\"tt-title\">30 DAYS RETURN<\/h4>\n\t\t\t<p>Simply return it within 30 days for an exchange.<\/p>\n\t\t<\/div>\n\t<\/a>\n<\/div>",
+        "show_custom_related": true,
+        "custom_related_fullscreen": false,
+        "custom_related_titleincenter": false,
+        "custom_related_title": "CUSTOM PRODUCTS",
+        "custom_related_length": "8",
+        "custom_related_slickdesktoptoshow": "4"
+      }
+    },
+    "loox-product-reviews-app-section": {
+      "type": "apps",
+      "blocks": {
+        "loox-product-reviews": {
+          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "only_photos": false,
+            "aggregated": false,
+            "limit": 20,
+            "hide_thumbnails": false,
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "loox-product-reviews"
+      ],
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "e4e4ffd4-4395-4648-9edc-4fc8f296600a": {
+      "type": "instruccions",
+      "blocks": {
+        "d11729b7-7e0d-4aaf-9125-72e2e8b902b1": {
+          "type": "step",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/6bb25d566155609f598ab45b1a8c3a9b.png",
+            "title": "",
+            "content": "<p>Warm the wax in a wax warmer until it has melted and reached a liquid consistency. To avoid burns, always test the wax temperature on a small area before applying it.<\/p>"
+          }
+        },
+        "8f908767-e8c4-4f2b-9bca-ab2ade1313a0": {
+          "type": "step",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/f6c643ae33b19035b506ee35078ae101.png",
+            "title": "",
+            "content": "<p>Gently apply one of our\u2028Pre-Wax Care products to the area.<\/p>"
+          }
+        },
+        "036c741c-d5f4-459e-b32a-d5d8ffae4fa6": {
+          "type": "step",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/c6470d5418ab06e68b80b3f6fe14fcc3.png",
+            "title": "",
+            "content": "<p>Each and every time dip a new spatula into the wax container and using a thin coating of wax, apply it in the direction of hair development.<\/p>"
+          }
+        },
+        "30a63492-038c-4cdd-81bb-96ddc82a6b23": {
+          "type": "step",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/c6470d5418ab06e68b80b3f6fe14fcc3.png",
+            "title": "",
+            "content": "<p>Apply a non-woven or muslin strip and firmly press it in place. Lift a strip's border and pull it off in one swift motion, this time against the hair growth.<\/p>"
+          }
+        },
+        "1a594f82-85f8-4164-bec6-d4f21b621ef9": {
+          "type": "step",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/c6470d5418ab06e68b80b3f6fe14fcc3.png",
+            "title": "",
+            "content": "<p>To finish the treatment, gently apply the Nacach Post Wax Refreshing Cream massage smooth until absorbed.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "d11729b7-7e0d-4aaf-9125-72e2e8b902b1",
+        "8f908767-e8c4-4f2b-9bca-ab2ade1313a0",
+        "036c741c-d5f4-459e-b32a-d5d8ffae4fa6",
+        "30a63492-038c-4cdd-81bb-96ddc82a6b23",
+        "1a594f82-85f8-4164-bec6-d4f21b621ef9"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "How To Use Soft Wax"
+      }
+    },
+    "61606b8d-352c-4727-9646-1dd4fd5d58b5": {
+      "type": "product-reviews",
+      "settings": {
+      }
+    },
+    "f6d94845-0fc8-4503-855b-835dcbddeaf5": {
+      "type": "product-recommendations-aws",
+      "settings": {
+        "show_product_recommendations": true,
+        "heading": "You may also like"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "loox-product-reviews-app-section",
+    "e4e4ffd4-4395-4648-9edc-4fc8f296600a",
+    "61606b8d-352c-4727-9646-1dd4fd5d58b5",
+    "f6d94845-0fc8-4503-855b-835dcbddeaf5"
+  ]
+}

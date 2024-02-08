@@ -15,23 +15,23 @@
   	<link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png">
   {%- endif -%}
 
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-MQTXNC9');</script>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MQTXNC9');</script>
 
-<script src="{{ 'blaze-slider.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'blaze-slider.js' | asset_url }}" defer="defer"></script>
 
   <script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"27022562"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script>
   
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-101BWZ2VLM"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-101BWZ2VLM');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-101BWZ2VLM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-101BWZ2VLM');
+  </script>
   
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-766239247"></script>
   <script>
@@ -43,13 +43,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     });
   </script>
   
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-191986672-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-191986672-1');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-191986672-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-191986672-1');
+  </script>
 
   
   <!-- Title and description ================================================== -->
@@ -98,8 +98,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   {%- endif -%}
   
   <!-- Header hook for plugins ================================================== -->
-  
-  {{ content_for_header }}
+    {{ content_for_header }}
   <!-- /Header hook for plugins ================================================== -->
 
   {%- unless settings.show_emptyreview -%}
@@ -123,26 +122,37 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   {% render 'shopstorm-scripttags' %}
   <script>(function(d){var s = d.createElement("script");s.setAttribute("data-account", "puSlC6JYDy");s.setAttribute("src", "https://cdn.userway.org/widget.js");(d.body || d.head).appendChild(s);})(document)</script>
 
-{% render 'gsf-conversion-pixels' %}
+  {% render 'gsf-conversion-pixels' %}
 
 
-{% if collection and canonical_url contains '/products/' %}
-  <link rel="canonical" href="{{ shop.url }}{{ product.url }}">
-{% elsif collection %}
-    <link rel="canonical" href="{{ shop.url }}{{ collection.url }}">
-{% else %}
-  <link rel="canonical" href="{{ canonical_url }}">
-{% endif %}
+  {% if collection and canonical_url contains '/products/' %}
+    <link rel="canonical" href="{{ shop.url }}{{ product.url }}">
+  {% elsif collection %}
+      <link rel="canonical" href="{{ shop.url }}{{ collection.url }}">
+  {% else %}
+    <link rel="canonical" href="{{ canonical_url }}">
+  {% endif %}
 
-{% if product.handle == '__customized-items' %}
-  <meta name="robots" content="noindex, follow">
-{% endif %}
-{% if canonical_url contains '/tagged/' %}
-  <meta name="robots" content="noindex, follow">
-{% endif %}
+  {% if product.handle == '__customized-items' %}
+    <meta name="robots" content="noindex, follow">
+  {% endif %}
+  {% if canonical_url contains '/tagged/' %}
+    <meta name="robots" content="noindex, follow">
+  {% endif %}
 
 
+  {% liquid
+    # Relative to entrypointsDir
+    render 'adastra' with 'base.css'
+    render 'adastra' with 'index.ts'
+  
+    # Basic liquid code splitting
+    #if request.page_type contains 'customers/'
+    #  render 'adastra' with 'customers.css'
+    #endif
+  %}
 </head>
+
 <body class="page{{ template }}" {% if template contains '404' %}id="template404"{% elsif settings.use_scale_product_image %}
       id="same_product_height"{% if settings.notsamewidth %} data-type="not_same_width"{% endif %}{% endif %}
       {% if request.design_mode %} data-supportcode="{{ settings.supportcode }}"{% endif %}>

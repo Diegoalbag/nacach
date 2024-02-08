@@ -1,1 +1,43 @@
-{"sections":{"main":{"type":"page","settings":{}},"164010956300a75261":{"type":"index-section-text_block","settings":{"text1":"Nacach Reviews","text2":"","center_b_d":false,"text3":""}},"1640109548ed0260f5":{"type":"apps","blocks":{"0238e866-f5b3-49ce-849a-869db31e6685":{"type":"shopify:\/\/apps\/loox-photo-reviews\/blocks\/loox-agg-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e","settings":{"only_photos":false,"hide_thumbnails":false,"product_handle":"","aggregated":true,"maxwidth":1080}}},"block_order":["0238e866-f5b3-49ce-849a-869db31e6685"],"settings":{}}},"order":["main","164010956300a75261","1640109548ed0260f5"]}
+{
+  "sections": {
+    "main": {
+      "type": "page",
+      "settings": {
+      }
+    },
+    "164010956300a75261": {
+      "type": "index-section-text_block",
+      "settings": {
+        "text1": "Nacach Reviews",
+        "text2": "",
+        "center_b_d": false,
+        "text3": ""
+      }
+    },
+    "1640109548ed0260f5": {
+      "type": "apps",
+      "blocks": {
+        "0238e866-f5b3-49ce-849a-869db31e6685": {
+          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-agg-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "only_photos": false,
+            "hide_thumbnails": false,
+            "product_handle": "",
+            "aggregated": true,
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "0238e866-f5b3-49ce-849a-869db31e6685"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "164010956300a75261",
+    "1640109548ed0260f5"
+  ]
+}

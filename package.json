@@ -1,0 +1,26 @@
+{
+  "name": "nacach",
+  "version": "1.0.0",
+  "description": "Nacach Shopify Theme | AWS | Feb 2024",
+  "main": "index.js",
+  "scripts": {
+    "dev": "adastra dev --store=https://nacach.myshopify.com/",
+    "build": "adastra build",
+    "preview": "adastra preview",
+    "check": "adastra check",
+    "dev:shopify": "shopify theme dev --store nacach.myshopify.com"
+  },
+  "author": "Absolute Web Services | Devs: Rene, Diego",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/alpinejs": "^3.13.6",
+    "adastra-plugin": "^0.4.0",
+    "tailwindcss": "^3.4.1",
+    "vite": "^4.1.4"
+  },
+  "dependencies": {
+    "alpinejs": "^3.13.5",
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.35"
+  }
+}

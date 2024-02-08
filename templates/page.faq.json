@@ -1,1 +1,68 @@
-{"sections":{"main":{"type":"contact-template","disabled":true,"blocks":{"1513171308212":{"type":"map","disabled":true,"settings":{"top":true,"fullwidth":false,"api":"","textx":"40.6700","texty":"-73.9400","zoom":"11","text2":"New York"}},"1513174782875":{"type":"icons","settings":{"show_block_1":true,"code1":"f-93","title1":"Talk to a Representative","cont1":"Phone: 1-866-460-1460","code2":"f-24","show_block_2":true,"title2":"Mail us","cont2":"P.O Box: 268145 Weston, FL 33326","code3":"f-92","show_block_3":true,"title3":"WORK TIME","cont3":"7 Days a week<br>from 10 AM to 6 PM"}},"1513169442110":{"type":"contactform","settings":{}}},"block_order":["1513171308212","1513174782875","1513169442110"],"settings":{}},"16401081755ae25cf7":{"type":"index-section-custom_html","settings":{"topoffset":true,"fullwidth":false,"fullwidth2":false,"data":"","usebgcolor":false,"usebgcolorfullwidth":false,"bgco":"#ffffff"}}},"order":["main","16401081755ae25cf7"]}
+{
+  "sections": {
+    "main": {
+      "type": "contact-template",
+      "blocks": {
+        "1513171308212": {
+          "type": "map",
+          "disabled": true,
+          "settings": {
+            "top": true,
+            "fullwidth": false,
+            "api": "",
+            "textx": "40.6700",
+            "texty": "-73.9400",
+            "zoom": "11",
+            "text2": "New York"
+          }
+        },
+        "1513174782875": {
+          "type": "icons",
+          "settings": {
+            "show_block_1": true,
+            "code1": "f-93",
+            "title1": "Talk to a Representative",
+            "cont1": "Phone: 1-866-460-1460",
+            "code2": "f-24",
+            "show_block_2": true,
+            "title2": "Mail us",
+            "cont2": "P.O Box: 268145 Weston, FL 33326",
+            "code3": "f-92",
+            "show_block_3": true,
+            "title3": "WORK TIME",
+            "cont3": "7 Days a week<br>from 10 AM to 6 PM"
+          }
+        },
+        "1513169442110": {
+          "type": "contactform",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "1513171308212",
+        "1513174782875",
+        "1513169442110"
+      ],
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "16401081755ae25cf7": {
+      "type": "index-section-custom_html",
+      "settings": {
+        "topoffset": true,
+        "fullwidth": false,
+        "fullwidth2": false,
+        "data": "",
+        "usebgcolor": false,
+        "usebgcolorfullwidth": false,
+        "bgco": "#ffffff"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16401081755ae25cf7"
+  ]
+}
