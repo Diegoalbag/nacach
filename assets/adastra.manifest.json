@@ -10,7 +10,7 @@
     "src": "node_modules/swiper/swiper.mjs"
   },
   "src/entrypoints/base.css": {
-    "file": "vex-base-e796fe4b.css",
+    "file": "vex-base-735c73ed.css",
     "isEntry": true,
     "src": "src/entrypoints/base.css"
   },

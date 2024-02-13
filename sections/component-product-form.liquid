@@ -5,7 +5,10 @@
     quantity: 1,
   }"
   id="product-form-target"
-  class="aw-px-5">
+  class="aw-px-5 aw-py-12">
+  <h2 
+    class="aw-text-center !aw-p-0 !aw-text-2xl lg:!aw-text-4xl !aw-font-bold aw-uppercase aw-leading-8"
+  >{{ section.settings.title }}</h2>
   {% if product %}
     <style>
       .product-table-container {
@@ -229,6 +232,12 @@
 {
   "name": "Product Form",
   "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Product Form"
+    },
     {
       "type": "product",
       "id": "product",

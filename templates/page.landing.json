@@ -91,6 +91,12 @@
         "subtitle": "Virtually no irritation"
       }
     },
+    "component_product_form_HWYjRH": {
+      "type": "component-product-form",
+      "settings": {
+        "product": "moroccan-gold-hard-wax-with-argan-oil"
+      }
+    },
     "component_title_text_bKnXLx": {
       "type": "component-title-text",
       "settings": {
@@ -222,6 +228,7 @@
     "component_hero_section_RaNXQM",
     "component_features_section_jFAPmB",
     "component_image_w_features_section_XU7tR3",
+    "component_product_form_HWYjRH",
     "component_title_text_bKnXLx",
     "component_products_slider_cb6HTm",
     "component_reviews_section_JTt4bT",
