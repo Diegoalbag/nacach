@@ -1,7 +1,7 @@
 {% unless product.metafields.section.reviews.value == blank %}
   <div class="reviews-container">
     <div class="reviews-summary">
-      <div class="reviews-summaty__stars">
+      <div class="reviews-summary__stars !aw-flex">
         {% for i in (1..5) %}
           {% include 'icon-review-lg'%}
         {% endfor %}

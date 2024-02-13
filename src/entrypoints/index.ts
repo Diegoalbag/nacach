@@ -8,6 +8,7 @@ const init = async () => {
 
     console.log("Hello from adastra-plugin")
     const { default: Alpine } = await import("alpinejs")
+    const { default: Swiper } = await import("swiper")
     // const { default: AlpinePersist } = await import("@alpinejs/persist")
     // const { default: Morph } = await import("@alpinejs/ui")
     // const { default: AlpineUI } = await import("@alpinejs/morph")
@@ -17,12 +18,22 @@ const init = async () => {
     //     "~/components/collection/index"
     // )
 
-    // Alpine.plugin(AlpinePersist)
-
     Alpine.data("HeroSection", (props) => ({
       async init() {
         console.log("HeroSection", props)
       },
+    }))
+
+    Alpine.data("ReviewsSlider", (props) => ({
+      async init() {
+        this.$nextTick(() => {
+          this.initSlider()
+        })
+      },
+      initSlider() {
+        console.log("initSlider")
+        new Swiper(this.$el, props.swiperOptions)
+      }
     }))
 
     Alpine.start()

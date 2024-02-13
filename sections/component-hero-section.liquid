@@ -1,31 +1,54 @@
 <div
   x-data="HeroSection"
-  class="aw-flex aw-bg-gradient-to-b aw-from-orange-100 aw-to-yellow-50 aw-px-5 aw-py-14"
+  class="aw-flex aw-gap-10 aw-flex-col lg:aw-flex-row aw-justify-center aw-items-center aw-bg-gradient-to-b aw-from-orange-100 aw-to-white aw-px-5 aw-py-7 md:aw-py-11"
 >
-  <div class="aw-mx-auto aw-bg-gray-100 aw-flex-col aw-justify-start aw-items-center lg:aw-items-start aw-gap-6 aw-inline-flex">
+  <div class="aw-max-w-[400px] aw-flex-1 aw-borde aw-border-black aw-flex-col aw-justify-start md:aw-justify-center aw-items-center lg:aw-items-start aw-gap-6 aw-inline-flex">
     <div class="">
       <h2 
-        class="aw-text-center lg:aw-text-left aw-text-pink-600 !aw-text-3xl lg:!aw-text-5xl !aw-font-bold aw-uppercase aw-leading-10"
-      >Effortless Wax, <br> Everytime.</h2>
+        class="aw-text-center !aw-p-0 lg:aw-text-left aw-text-pink-600 !aw-text-3xl sm:!aw-text-4xl lg:!aw-text-5xl !aw-font-bold aw-uppercase aw-leading-10"
+      >{{ section.settings.title }}</h2>
       <p
-        class="aw-text-center aw-text-zinc-800 aw-text-base aw-font-medium aw-leading-snug"
-      >Elevate your business with wax made in Italy and crafted for excellence.</p>
+        class="aw-text-center lg:aw-text-left aw-text-zinc-800 aw-text-base sm:aw-text-lg aw-font-medium aw-leading-snug"
+      >{{ section.settings.description }}</p>
     </div>
-    <button
-      type="button"
-      class="aw-px-20 aw-py-4 aw-bg-pink-600 aw-rounded-md aw-text-center aw-text-white aw-text-sm lg:!aw-text-2xl aw-font-medium aw-uppercase aw-leading-none aw-tracking-wide">
-      Buy Now
-    </button>
+    {% if section.settings.button_text != blank and section.settings.button_url != blank %}
+      <a
+        role="button"
+        href="{{ section.settings.button_url }}"
+        class="aw-px-20 aw-py-4 aw-bg-pink-600 aw-rounded-md aw-text-center !aw-text-white aw-text-sm lg:!aw-text-2xl aw-font-medium aw-uppercase aw-leading-none aw-tracking-wide">
+        {{ section.settings.button_text }}
+      </a>
+    {% endif %}
   </div>
-  <div class="aw-rounded-lg aw-overflow-hidden">
+  <div class="aw-flex aw-flex-col aw-items-center aw-gap-[18px] aw-overflow-hidden">
     <video 
-      class="aw-w-full"
+      class="aw-w-full aw-max-w-96 md:aw-max-w-[540px] 2xl:aw-max-w-[680px] aw-rounded-[20px] aw-aspect-[335/251] aw-object-cover"
       autoplay 
       loop 
       muted
       playsinline
-      src="{{ section.settings.video_url.sources[0].url }}"
+      src="{{ section.settings.video_url | default: 'https://s3-figma-videos-production-sig.figma.com/video/955987228506764325/TEAM/db84/d3fd/-4cdd-4e43-933a-56edfbca8740?Expires=1708300800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=A-omNF1g3zXNSu7OJD2bkqCj2Ajxh5OYHrkcvaTmKh8UV0VHDIQ-SxfNHuntuNt4luLKQLl0RTsEAOG2pBpx-FyUrCnjd6X6tAYmKOvY2236dktX~LJP3u6i9x6w372T-MjlmUkWCKuakf9oC0Epjh7tM41KFJ-2XsSKBky~EPuLiSicHecdoNgcSjfZ0nri~dr93DDEQ~0N8TNOqPzuH80q4PvUHjMzOWECQFUX-vRBrpyqrjrQx0-tcvMa7BQsMlvYTaXZUgUweKn4qL5A2-EuWKrAuztQdqUFNp1dbVIfAEvaZ3Y7DRnviBFuKkiq3i153Bkqrgb5PxbqCPq6FA__'}}"
+      type="video/mp4"
     ></video>
+    <div
+      class="features-container"
+    >
+      {% for feature in section.blocks %}
+        {% if feature.settings.title != blank %}
+          <div class="feature aw-flex aw-gap-2 aw-items-center">
+            <div class="feature-icon aw-flex aw-justify-center aw-items-center aw-h-7 aw-w-7 aw-bg-gray-100 aw-rounded-full">
+              {% render 'icon-ninja-star' %}
+            </div>
+            <div class="feature-content">
+              <h3 class="feature-title aw-font-['Hind'] !aw-p-0 !aw-text-base !aw-font-extralight aw-leading-5 aw-uppercase">
+                {{ feature.settings.title }}
+              </h3>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
 </div>
 
 {% schema %}
@@ -36,6 +59,30 @@
         "type": "video",
         "id": "video_url",
         "label": "Video"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "Effortless Wax, <br> Everytime."
+      },
+      {
+        "type": "text",
+        "id": "description",
+        "label": "Description",
+        "default": "Elevate your business with wax made in Italy and crafted for excellence."
+      },
+      {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button Text",
+        "default": "Buy Now"
+      },
+      {
+        "type": "text",
+        "id": "button_url",
+        "label": "Button URL",
+        "default": "#"
       }
     ],
     "presets": [

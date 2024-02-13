@@ -11,42 +11,44 @@
 
           <div class="form-default{% if item.allinleft %} text-left{% endif %}">
             {%- if settings.use_mailchimp_form -%}
-            {%- if settings.mailchimp_form_action != "" -%}
-            <form action="{{ settings.mailchimp_form_action }}" method="post" name="mc-embedded-subscribe-form" target="_blank">
-              <div class="form-group">
-                <input type="email" name="EMAIL" class="form-control"
-                       value="{% if customer %}{{ customer.email }}{% endif %}"
-                       placeholder="{{ item.subfplholder }}"
-                       >
-                <button type="submit" class="btn">{{ item.subfbtext }}</button>
-              </div>
-            </form>
+              {%- if settings.mailchimp_form_action != "" -%}
+                <form action="{{ settings.mailchimp_form_action }}" method="post" name="mc-embedded-subscribe-form" target="_blank">
+                  <div class="form-group">
+                    <input type="email" name="EMAIL" class="form-control"
+                          value="{% if customer %}{{ customer.email }}{% endif %}"
+                          placeholder="{{ item.subfplholder }}"
+                          >
+                    <button type="submit" class="btn">{{ item.subfbtext }}</button>
+                  </div>
+                </form>
+              {%- else -%}
+                <strong>
+                  <u>
+                    <a href="{{ shop.url }}/admin/themes" style="color: black;">
+                      Add newsletter redirect link in:<br>
+                      Customize Theme / General Settings / Newsletter / MailChimp form action URL
+                    </a>
+                  </u>
+                </strong>
+              {%- endif -%}
             {%- else -%}
-            <strong><u><a href="{{ shop.url }}/admin/themes" style="color: black;">
-              Add newsletter redirect link in:<br>
-              Customize Theme / General Settings / Newsletter / MailChimp form action URL
-              </a></u></strong>
-            {%- endif -%}
-
-            {%- else -%}
-            {%- form 'customer' -%}
-            {{ form.errors | default_errors }}
-            {%- if form.posted_successfully? -%}
-
-            {%- endif -%}
-            <div class="form-group">
-              <input type="hidden" name="contact[tags]" value="newsletter">
-              <input type="email"
-                     name="contact[email]"
-                     class="form-control"
-                     value="{% if customer %}{{ customer.email }}{% endif %}"
-                     placeholder="{{ item.subfplholder }}"
-                     autocomplete="off"
-                     autocapitalize="off"
-                     spellcheck="false" >
-              <button type="submit" class="btn" name="commit">{{ item.subfbtext }}</button>
-            </div>
-            {%- endform -%}
+              {%- form 'customer' -%}
+              {{ form.errors | default_errors }}
+              {%- if form.posted_successfully? -%}
+              {%- endif -%}
+                <div class="form-group">
+                  <input type="hidden" name="contact[tags]" value="newsletter">
+                  <input type="email"
+                        name="contact[email]"
+                        class="form-control"
+                        value="{% if customer %}{{ customer.email }}{% endif %}"
+                        placeholder="{{ item.subfplholder }}"
+                        autocomplete="off"
+                        autocapitalize="off"
+                        spellcheck="false" >
+                  <button type="submit" class="btn" name="commit">{{ item.subfbtext }}</button>
+                </div>
+              {%- endform -%}
             {%- endif -%}
           </div>
 

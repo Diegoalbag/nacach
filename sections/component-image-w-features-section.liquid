@@ -1,0 +1,127 @@
+<div class="aw-flex aw-flex-col aw-items-center aw-gap-4 aw-px-5 aw-py-7">
+  <div class="aw-w-max">
+    <h2 
+      class="aw-text-center !aw-p-0 !aw-text-2xl !aw-font-bold aw-uppercase aw-leading-8"
+    >{{ section.settings.title }}<br>
+    <span class="aw-text-pink-600 aw-leading-8">{{ section.settings.subtitle }}</span></h2>
+  </div>
+  <div class="aw-flex aw-flex-col lg:aw-flex-row aw-gap-5">
+    <div
+      class="features-container aw-flex aw-gap-2 aw-flex-1 aw-items-center lg:aw-items-end lg:aw-justify-around aw-flex-col aw-w-full aw-px-9 lg:aw-px-0"
+    >
+      {% for block in section.blocks %}
+        {% if block.type == 'left-feature' %}
+        <!-- Feature -->
+          <div class="feature aw-group aw-w-36 aw-flex aw-gap-3 aw-items-center even:!aw-flex-row-reverse odd:lg:!aw-flex-row-reverse odd:aw-translate-x-[40%] odd:lg:aw-translate-x-0 even:aw-translate-x-[-41%] even:lg:aw-translate-x-0">
+            <div class="feature-icon aw-flex aw-justify-center aw-items-center aw-h-7 aw-w-7 aw-bg-gray-100 aw-rounded-full">
+              {% render 'icon-ninja-star' %}
+            </div>
+            <div class="feature-content">
+              <h3 class="feature-title aw-font-['Hind'] group-even:aw-text-right group-odd:lg:aw-text-right !aw-p-0 !aw-text-base !aw-font-extralight aw-leading-5 aw-uppercase">
+                {{ block.settings.title }}
+              </h3>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+      {% comment %} <!-- Feature -->
+      <div class="feature aw-group aw-w-36 aw-flex aw-gap-3 aw-items-center even:!aw-flex-row-reverse odd:lg:!aw-flex-row-reverse odd:aw-translate-x-[40%] odd:lg:aw-translate-x-0 even:aw-translate-x-[-40%] even:lg:aw-translate-x-0">
+        <div class="feature-icon aw-flex aw-justify-center aw-items-center aw-h-7 aw-w-7 aw-bg-gray-100 aw-rounded-full">
+          {% render 'icon-ninja-star' %}
+        </div>
+        <div class="feature-content">
+          <h3 class="feature-title aw-font-['Hind'] group-even:aw-text-right group-odd:lg:aw-text-right !aw-p-0 !aw-text-base !aw-font-extralight aw-leading-5 aw-uppercase">Low Melting Point</h3>
+        </div>
+      </div> {% endcomment %}
+    </div>
+    <div class="aw-flex aw-flex-[2] aw-justify-center aw-overflow-hidden">
+      <img 
+        class="aw-w-full aw-max-w-96 md:aw-max-w-[540px] 2xl:aw-max-w-[680px] aw-rounded-[20px] aw-aspect-[335/251] aw-object-cover"
+        src="{{ section.settings.image | img_url: 'master' }}" 
+        loading="lazy" 
+        alt="Center Image"
+      />
+    </div>
+    <div
+      class="features-container aw-flex aw-gap-2 aw-flex-1 aw-items-center lg:aw-items-start lg:aw-justify-around aw-flex-col aw-w-full aw-px-9 lg:aw-px-0"
+    >
+      {% for block in section.blocks %}
+        {% if block.type == 'right-feature' %}
+          <!-- Feature -->
+          <div class="feature aw-group aw-w-36 aw-flex aw-gap-3 aw-items-center odd:!aw-flex-row-reverse odd:lg:!aw-flex-row even:aw-translate-x-[40%] even:lg:aw-translate-x-0 odd:aw-translate-x-[-41%] odd:lg:aw-translate-x-0">
+            <div class="feature-icon aw-flex aw-justify-center aw-items-center aw-h-7 aw-w-7 aw-bg-gray-100 aw-rounded-full">
+              {% render 'icon-ninja-star' %}
+            </div>
+            <div class="feature-content">
+              <h3 class="feature-title aw-font-['Hind'] group-odd:aw-text-right group-odd:lg:aw-text-left !aw-p-0 !aw-text-base !aw-font-extralight aw-leading-5 aw-uppercase">
+                {{ block.settings.title }}
+              </h3>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+      {% comment %} <!-- Feature -->
+      <div class="feature aw-group aw-w-36 aw-flex aw-gap-3 aw-items-center odd:!aw-flex-row-reverse odd:lg:!aw-flex-row even:aw-translate-x-[40%] even:lg:aw-translate-x-0 odd:aw-translate-x-[-41%] odd:lg:aw-translate-x-0">
+        <div class="feature-icon aw-flex aw-justify-center aw-items-center aw-h-7 aw-w-7 aw-bg-gray-100 aw-rounded-full">
+          {% render 'icon-ninja-star' %}
+        </div>
+        <div class="feature-content">
+          <h3 class="feature-title aw-font-['Hind'] group-odd:aw-text-right group-odd:lg:aw-text-left !aw-p-0 !aw-text-base !aw-font-extralight aw-leading-5 aw-uppercase">Low Melting Point</h3>
+        </div>
+      </div> {% endcomment %}
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Image w/Features Section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Our Features"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Virtually no irritation"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "left-feature",
+      "name": "Left Feature",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        }
+      ]
+    },
+    {
+      "type": "right-feature",
+      "name": "Right Feature",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image w/Features Section"
+    }
+  ]
+}
+{% endschema %}

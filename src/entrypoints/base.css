@@ -1,4 +1,18 @@
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components {
+  .product-list-description {
+    @apply aw-text-sm aw-font-light;
+    li {
+      @apply aw-list-none aw-mb-2 aw-relative aw-translate-x-4 after:aw-content-[''] after:aw-block after:aw-w-2 after:aw-h-2 after:-aw-translate-x-4 after:aw-bg-pink-600 after:aw-absolute after:aw-top-0 after:aw-left-0 after:aw-rounded-full after:aw-mt-1;
+    }
+  }
+}
 

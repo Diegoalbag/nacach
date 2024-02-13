@@ -1,0 +1,52 @@
+<div class="lg:aw-flex aw-gap-24 aw-items-start aw-px-5 aw-py-7 aw-max-w-[560px] lg:aw-max-w-[1180px] mx-auto">
+  <h2 class="!aw-text-2xl aw-w-full lg:!aw-text-4xl !aw-p-0 aw-uppercase !aw-font-bold aw-max-w-[348px]">
+    {{ section.settings.title }}
+  </h2>
+  <div class=" aw-flex aw-flex-col aw-gap-7 aw-text-left !aw-p-0 aw-text-base aw-font-medium aw-leading-snug">
+    <p>{{ section.settings.text }}</p>
+    {% if section.settings.button_text != blank and section.settings.button_link != blank %}
+      <a
+        href="{{ section.settings.button_link }}"
+        class="aw-w-max aw-text-pink-600 aw-border-2 aw-border-pink-600 aw-py-3 aw-px-6 aw-rounded-md aw-uppercase aw-text-sm"
+      >
+        {{ section.settings.button_text }}
+      </a>
+    {% endif %}
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Title & Text Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Your All-in-One Solution"
+    },
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Text",
+      "default": "Whether you're a seasoned professional or a home waxing enthusiast, our kits provide everything you need for a comprehensive waxing session. Featuring our top-quality waxes, pre and post-wax treatments, and essential tools."
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "View All"
+    },
+    {
+      "type": "text",
+      "id": "button_link",
+      "label": "Button Link",
+      "default": "#"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Title & Text Section"
+    }
+  ]
+}
+{% endschema %}

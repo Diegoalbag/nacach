@@ -1,0 +1,87 @@
+<div
+  class="aw-flex aw-w-full aw-max-w-max md:aw-max-w-6xl aw-flex-col md:aw-flex-row aw-mx-auto aw-items-start md:aw-justify-center aw-gap-9 md:aw-gap-1 xl:aw-gap-8 aw-py-7 aw-px-5"
+>
+  {% for feature in section.blocks %}
+    <div class="aw-flex md:aw-max-w-1/2 aw-gap-5 aw-pl-4">
+      <div class="e">
+        <div class="aw-h-14 aw-relative aw-w-14 aw-bg-gray-100 aw-rounded-full">
+          {{ feature.settings.icon }}
+        </div>
+      </div>
+      <div class="e">
+        <h3
+          class="!aw-text-lg !aw-p-0 aw-font-semibold aw-text-gray-900 aw-leading-6 aw-uppercase"
+        >
+          {{ feature.settings.title }}
+        </h3>
+        <p class="aw-text-sm aw-text-gray-600">{{ feature.settings.subtitle }}</p>
+      </div>
+    </div>
+  {% endfor %}
+  {% comment %}
+    <div class="aw-flex md:aw-max-w-1/2 aw-gap-5 aw-pl-4">
+      <div class="e">
+        <div class="aw-h-14 aw-relative aw-w-14 aw-bg-gray-100 aw-rounded-full">
+          {% render 'icon-molecule' class: 'aw-absolute -aw-translate-x-4 aw-translate-y-4' %}
+        </div>
+      </div>
+      <div class="e">
+        <h3
+          class="!aw-text-lg !aw-p-0 aw-font-semibold aw-text-gray-900 aw-leading-6 aw-uppercase"
+        >Gentle Yet Effective Formulas</h3>
+        <p class="aw-text-sm aw-text-gray-600">Over 500 5 Star Reviews</p>
+      </div>
+    </div>
+    <div class="aw-flex md:aw-max-w-1/2 aw-gap-5 aw-pl-4">
+      <div class="e">
+        <div class="aw-h-14 aw-relative aw-w-14 aw-bg-gray-100 aw-rounded-full">
+          {% render 'icon-profit' class: 'aw-absolute -aw-translate-x-4 aw-translate-y-4' %}
+        </div>
+      </div>
+      <div class="e">
+        <h3
+          class="!aw-text-lg !aw-p-0 aw-font-semibold aw-text-gray-900 aw-leading-6 aw-uppercase"
+        >Trusted by Professionals Worldwide</h3>
+        <p class="aw-text-sm aw-text-gray-600">Over 500 5 Star Reviews</p>
+      </div>
+    </div>
+  {% endcomment %}
+</div>
+
+<div class="sr-only aw-absolute -aw-translate-x-4 aw-translate-y-4"></div>
+
+{% schema %}
+{
+  "name": "Features Section",
+  "blocks": [
+    {
+      "name": "Feature",
+      "type": "feature",
+      "settings": [
+        {
+          "type": "text",
+          "label": "Title",
+          "id": "title",
+          "default": "Trusted by Professionals Worldwide"
+        },
+        {
+          "type": "liquid",
+          "id": "icon",
+          "label": "Icon"
+        },        
+        {
+          "type": "text",
+          "label": "Subtitle",
+          "id": "subtitle",
+          "default": "Over 500 5 Star Reviews"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Features Section"
+    }
+  ]
+}
+{% endschema %}

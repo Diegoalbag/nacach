@@ -1,0 +1,26 @@
+{
+  "node_modules/alpinejs/dist/module.esm.js": {
+    "file": "vex-chunk-module.esm-87422a9e.js",
+    "isDynamicEntry": true,
+    "src": "node_modules/alpinejs/dist/module.esm.js"
+  },
+  "node_modules/swiper/swiper.mjs": {
+    "file": "vex-chunk-swiper-06be5c24.js",
+    "isDynamicEntry": true,
+    "src": "node_modules/swiper/swiper.mjs"
+  },
+  "src/entrypoints/base.css": {
+    "file": "vex-base-a516e417.css",
+    "isEntry": true,
+    "src": "src/entrypoints/base.css"
+  },
+  "src/entrypoints/index.ts": {
+    "dynamicImports": [
+      "node_modules/alpinejs/dist/module.esm.js",
+      "node_modules/swiper/swiper.mjs"
+    ],
+    "file": "vex-index-324cb71d.js",
+    "isEntry": true,
+    "src": "src/entrypoints/index.ts"
+  }
+}

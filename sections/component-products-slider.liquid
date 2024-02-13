@@ -1,0 +1,143 @@
+<div class="aw-flex aw-flex-col aw-gap-4 aw-px-5 aw-py-7">
+  {% comment %} <div class="aw-w-full">
+    <h2 
+      class="aw-text-center !aw-p-0 lg:aw-text-left !aw-text-2xl !aw-font-bold aw-uppercase aw-leading-8"
+    >Real Reviews From Real Customers
+    </h2>
+  </div> {% endcomment %}
+  <div
+    x-data="ReviewsSlider({
+      swiperOptions: {
+        centeredSlides: true,
+        spaceBetween: 20,
+        slidesPerView: 1,
+        loop: true,
+        navigation: {
+          nextEl: '.button-next',
+          prevEl: '.button-prev',
+        },
+        breakpoints: {
+          553: {
+            slidesPerView: 1.5
+          },
+          640: {
+            slidesPerView: 2
+          },
+          820: {
+            slidesPerView: 2.5
+          },
+          1020: {
+            slidesPerView: 3
+          }
+        }
+      }
+    })"
+    class="SliderContainer aw-relative aw-w-full !aw-max-w-[1180px] slider aw-overflow-hidden aw-mx-auto"
+  >
+    <div class="swiper-wrapper">
+      {% for block in section.blocks %}
+        {% if block.type == 'product' %}
+          {% assign product = block.settings.product %}
+          {% assign description = block.settings.description %}
+          {% comment %} {% assign product = section.blocks[0].settings.product %} {% endcomment %}
+          {% comment %} {% assign description = section.blocks[0].settings.description %} {% endcomment %}
+          <div class="swiper-slide aw-flex aw-flex-col aw-gap-4">
+            <div class="aw-relative aw-h-min aw-rounded-lg aw-px-10">
+              <img src="{{ product.featured_image | img_url: '350x' }}" alt="{{ product.image.alt }}" class="aw-w-full aw-h-auto aw-aspect-square">
+            </div>
+            <div class="aw-px-5">
+              <h3 class="!aw-text-lg aw-text-center !aw-p-0">
+                {{ product.title }}
+              </h3>
+              {%- if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price -%}
+                {%- assign sale_on = true -%}
+              {%- endif -%}
+              {%- if sale_on and product.variants.size == 1 -%}
+                <div class="aw-flex aw-gap-1 aw-items-center aw-justify-center">
+                  <span class="new-price aw-text-[#F8353E] aw-text-base aw-font-medium">
+                    {{ product.selected_or_first_available_variant.price | money }}
+                  </span>
+                  <s class="old-price aw-text-black aw-text-base aw-font-medium">
+                    {{ product.selected_or_first_available_variant.compare_at_price | money }}
+                  </s>
+                </div>
+                {%- else -%}
+                <div class="tt-price">
+                  <span>
+                    {% if product.price_min != product.price_max %}
+                      {{ product.price_min | money_without_trailing_zeros }} - {{ product.price_max | money_without_trailing_zeros }}
+                    {% else %}
+                      {{ product.selected_or_first_available_variant.price | money }}
+                    {% endif %}
+                  </span>
+                  <span class="old-price hide"></span>
+                </div>
+              {%- endif -%}
+            </div>
+            <div class="product-list-description aw-p-5 aw-bg-[#FFF5F7] aw-rounded-md">
+              {{ description }}
+              {%- if block.settings.button_text != blank and product.url != blank -%}
+                <a
+                  role="button"
+                  href="{{ product.url }}"
+                  class="aw-block aw-uppercase aw-text-center aw-w-full aw-text-base aw-font-medium aw-rounded-md aw-py-3 aw-px-5 aw-mt-5 aw-border-2 aw-border-pink-600 aw-text-pink-600 aw-bg-white aw-transition-all aw-duration-300 hover:aw-bg-pink-600 hover:aw-text-white"
+                >
+                  {{ block.settings.button_text }}
+                </a>
+              {%- endif -%}
+            </div>
+          </div>
+        {% endif %}
+        {% comment %} {% endfor %} {% endcomment %}
+      {% endfor %}
+    </div>
+
+    <div class="button-prev aw-absolute aw-bg-gray-100 aw-rounded-full aw-z-10 aw-top-1/2 -aw-translate-y-1/2 aw-right-0 aw-w-10 aw-h-10 aw-flex aw-justify-center aw-items-center">
+      {% render 'icon-right' %}
+    </div>
+    <div class="button-prev aw-absolute aw-bg-gray-100 aw-rounded-full aw-z-10 aw-top-1/2 -aw-translate-y-1/2 aw-left-0 aw-rotate-180 aw-w-10 aw-h-10 aw-flex aw-justify-center aw-items-center">
+      {% render 'icon-right' %}
+    </div> 
+
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Products Slider Section",
+  "blocks": [
+    {
+      "type": "product",
+      "name": "Product",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Product"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text",
+          "default": "Buy Now"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button Link",
+          "default": "/"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Products Slider Section"
+    }
+  ]
+}
+{% endschema %}

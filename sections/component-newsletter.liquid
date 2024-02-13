@@ -1,0 +1,138 @@
+<div class="aw-relative aw-px-5 aw-py-7 aw-bg-[url(https://cdn.shopify.com/s/files/1/0315/1131/4570/files/Vector.png?v=1707744988)] lg:aw-bg-[url(https://cdn.shopify.com/s/files/1/0315/1131/4570/files/Vector1.png?v=1707745129)] aw-bg-cover aw-bg-right-bottom">
+  <div class="aw-flex aw-mx-auto aw-items-center aw-justify-center aw-flex-col lg:aw-flex-row aw-gap-7">
+    <div class="aw-max-w-[556px]">
+      <h2 class="!aw-text-2xl aw-uppercase !aw-font-bold">
+        {{ section.settings.title }}
+      </h2>
+      <div class=" aw-flex aw-flex-col aw-gap-7 aw-text-left !aw-p-0 aw-text-base aw-font-medium aw-leading-snug">
+        <p>{{ section.settings.description }}</p>
+        {% unless section.settings.button_text == blank and section.settings.button_link == blank %}
+          <a 
+            href="{{ section.settings.button_link }}"
+            class="aw-w-max aw-text-pink-600 aw-border-2 aw-border-pink-600 aw-py-3 aw-px-6 aw-rounded-md aw-uppercase aw-text-sm"
+          >
+            {{ section.settings.button_text }}
+          </a>
+        {% endunless %}
+      </div>
+    </div>
+    <div>
+      {% render 'shape-1'%}
+    </div>
+  </div>
+  <div class="aw-flex aw-flex-col aw-my-32 aw-max-w-[660px] aw-mx-auto">
+    <h2 class="!aw-text-2xl aw-text-center  aw-uppercase !aw-font-bold">CATCH THE LATEST</h2>
+    <div>
+      <div class="form-default{% if item.allinleft %} text-left{% endif %}">
+        {%- if settings.use_mailchimp_form -%}
+          {%- if settings.mailchimp_form_action != "" -%}
+            <form action="{{ settings.mailchimp_form_action }}" method="post" name="mc-embedded-subscribe-form" target="_blank">
+              <div class="form-group">
+                <input type="email" name="EMAIL" class="form-control"
+                      value="{% if customer %}{{ customer.email }}{% endif %}"
+                      placeholder="{{ item.subfplholder }}"
+                      >
+                <button type="submit" class="btn">{{ item.subfbtext }}</button>
+              </div>
+            </form>
+          {%- else -%}
+            <strong>
+              <u>
+                <a href="{{ shop.url }}/admin/themes" style="color: black;">
+                  Add newsletter redirect link in:<br>
+                  Customize Theme / General Settings / Newsletter / MailChimp form action URL
+                </a>
+              </u>
+            </strong>
+          {%- endif -%}
+        {%- else -%}
+          {%- form 'customer' -%}
+          {{ form.errors | default_errors }}
+          {%- if form.posted_successfully? -%}
+          {%- endif -%}
+            <div class="form-group">
+              <input type="hidden" name="contact[tags]" value="newsletter">
+              <input
+                type="email"
+                name="contact[email]"
+                class="aw-px-5 aw-py-4 aw-text-sm aw-w-full aw-rounded-md"
+                value="{% if customer %}{{ customer.email }}{% endif %}"
+                placeholder="Enter your e-mail"
+                autocomplete="off"
+                autocapitalize="off"
+                spellcheck="false"
+              >
+              <button
+                type="submit"
+                class="aw-w-full aw-mt-3 aw-rounded-md !aw-px-5 !aw-py-4 aw-bg-[#303030] aw-uppercase aw-text-white"
+                name="commit"
+              >
+                sign me up
+              </button>
+            </div>
+          {%- endform -%}
+        {%- endif -%}
+
+        {% comment %} {%- unless footer_links.settings.show_subsribe_form_social_only -%}
+          {%- if footer_links.settings.show_socials -%}
+            {%- capture soc_links -%}
+              {%- if footer_links.settings.facebook_url -%}<li><a class="icon-g-64" target="_blank" href="{{ footer_links.settings.facebook_url }}"></a></li>{%- endif -%}
+              {%- if footer_links.settings.twitter_url -%}<li><a class="icon-h-58" target="_blank" href="{{ footer_links.settings.twitter_url }}"></a></li>{%- endif -%}
+              {%- if footer_links.settings.gmail_url -%}<li><a class="icon-g-66" target="_blank" href="{{ footer_links.settings.gmail_url }}"></a></li>{%- endif -%}
+              {%- if footer_links.settings.instagram_url -%}<li><a class="icon-g-67" target="_blank" href="{{ footer_links.settings.instagram_url }}"></a></li>{%- endif -%}
+              {%- if footer_links.settings.pinterest_url -%}<li><a class="icon-g-70" target="_blank" href="{{ footer_links.settings.pinterest_url }}"></a></li>{%- endif -%}
+              {%- if footer_links.settings.youtube_url -%}<li><a class="icon-g-76" target="_blank" href="{{ footer_links.settings.youtube_url }}"></a></li>{%- endif -%}
+              {%- if footer_links.settings.whatsapp_url -%}<li><a target="_blank" href="{{ footer_links.settings.whatsapp_url }}">{% include "svg-whatsapp" %}</a></li>{%- endif -%}
+            {%- endcapture -%}
+            {%- assign soc_links = soc_links | strip -%}
+            {%- if soc_links != '' -%}
+              <ul class="tt-social-icon">{{ soc_links }}</ul>
+            {%- endif -%}
+          {%- endif -%}
+        {%- endunless -%} {% endcomment %}
+      </div>
+    </div>
+  </div>
+  <div class="aw-sr-only aw-hidden 2xl:aw-block -aw-right-1/2 aw-w-[500px] aw-h-[500px] aw-w-12 aw-w-[320px] aw-h-[320px] aw-h-12 aw-bottom-52 aw-bottom-24 aw-right-0 aw-w-16 aw-h-16 aw-w-1/2 aw-h-1/2 aw-bottom-16 aw-bottom-80 aw-left-1/2 aw-bottom-96 aw-left-5 aw-right-10"></div>
+  {% render 'icon-ninja-star', class: 'aw-w-12 aw-h-12  aw-absolute aw-right-10 aw-bottom-16' %}
+  {% render 'icon-ninja-star', class: 'aw-w-16 aw-h-16 aw-absolute aw-bottom-80 aw-left-5' %}
+  {% render 'icon-ninja-star', class: 'aw-w-12 aw-h-12 aw-absolute aw-bottom-96 aw-left-1/2' %}
+  {% render 'shape-3', class: 'aw-hidden 2xl:aw-block aw-w-[320px] aw-h-[320px] aw-absolute aw-bottom-52 aw-left-5' %}
+  {% render 'shape-4', class: 'aw-hidden 2xl:aw-block aw-absolute aw-bottom-24 aw-right-0' %}
+</div>
+{% schema %}
+{
+  "name": "Newsletter Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "About Nacach Wax"
+    },
+    {
+      "type": "text",
+      "id": "description",
+      "label": "Description",
+      "default": "For over three decades, we've been dedicated to providing estheticians and beauty enthusiasts with superior waxing products. Crafted in Italy with the finest natural ingredients, our range is designed to deliver a seamless waxing experience, ensuring comfort and effectiveness."
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "View All"
+    },
+    {
+      "type": "text",
+      "id": "button_link",
+      "label": "Button Link",
+      "default": "#"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Newsletter Section"
+    }
+  ]
+}
+{% endschema %}
