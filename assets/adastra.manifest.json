@@ -10,7 +10,7 @@
     "src": "node_modules/swiper/swiper.mjs"
   },
   "src/entrypoints/base.css": {
-    "file": "vex-base-a516e417.css",
+    "file": "vex-base-e796fe4b.css",
     "isEntry": true,
     "src": "src/entrypoints/base.css"
   },
@@ -19,7 +19,7 @@
       "node_modules/alpinejs/dist/module.esm.js",
       "node_modules/swiper/swiper.mjs"
     ],
-    "file": "vex-index-324cb71d.js",
+    "file": "vex-index-d12b3a8f.js",
     "isEntry": true,
     "src": "src/entrypoints/index.ts"
   }

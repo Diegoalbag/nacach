@@ -8,6 +8,9 @@
 
 
 @layer components {
+  body {
+    @apply !aw-scroll-smooth;
+  }
   .product-list-description {
     @apply aw-text-sm aw-font-light;
     li {

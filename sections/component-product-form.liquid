@@ -1,0 +1,244 @@
+{% assign product = section.settings.product %}
+<div 
+  x-data="{ 
+    selectedVariant: {{ product.first_available_variant.id }},
+    quantity: 1,
+  }"
+  id="product-form-target"
+  class="aw-px-5">
+  {% if product %}
+    <style>
+      .product-table-container {
+        border-radius: 6px;
+        overflow: hidden;
+        border: 1px solid #303030;
+      }
+      .product-table {
+        width: 100%;
+        {% comment %} height: 161px; {% endcomment %}
+      }
+      .product-table thead {
+        background: #303030;
+        padding: 10px;
+        color: white;
+        font-size: 14px;
+        font-family: Hind;
+        font-weight: 600;
+        line-height: 30px;
+      }
+      .product-table thead th:first-child {
+        padding-left: 10px;
+      }
+      .product-table tbody {
+        color: #777777;
+        font-size: 14px;
+        font-family: Hind;
+        font-weight: 400;
+        line-height: 22px;
+      }
+      .product-table tr {
+        line-height: 30px;
+      }
+      .product-table tr:hover {
+        background: #EFEFEF;
+      }
+      .product-table .highlight {
+        background: #FFCCD9 !important;
+        color: #191919;
+        font-weight: 600;
+      }
+      .product-table td:first-child {
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+      }
+    </style>
+    {% liquid 
+      assign template = 'hardwax'
+      assign unit = ''
+  
+      case template
+        when 'hardwax'
+          assign unit = 'Lb'
+  
+        when 'softwax'
+          assign unit = 'Can'
+  
+        when 'rollonwax'
+          assign unit = 'Ct'
+  
+        else 
+          assign unit = 'Unit'
+      endcase
+    %}
+    <div class="aw-flex aw-flex-col lg:aw-gap-24 aw-mx-auto lg:aw-flex-row aw-justify-center aw-items-center aw-gap-4 aw-max-w-[580px] lg:aw-max-w-[1180px]">
+      <div class="aw-h-min aw-w-full aw-max-w-[580px] aw-rounded-md aw-overflow-hidden">
+        <img src="{{ product.featured_image | img_url: '500x' }}" alt="{{ product.image.alt }}" class="aw-w-full aw-h-auto aw-aspect-square">
+        <div class="image-scroller aw-bg-pink-600 aw-text-white aw-py-2 aw-px-5">
+          <div class="aw-relative ">
+            <div class="aw-flex aw-gap-2 aw-leading-none !aw-m-0 !aw-p-0 aw-uppercase aw-items-center aw-justify-center aw-text-xs">
+              <div class="sr-only aw-h-[10px] aw-w-[10px] aw-mb-1"></div>
+              Nourished skin post wax 
+              {% render 'icon-review-star', class: 'aw-h-[10px] aw-w-[10px] aw-mb-1' %}
+              Reduces irritation
+              {% render 'icon-review-star', class: 'aw-h-[10px] aw-w-[10px] aw-mb-1' %}
+              Nourished skin post wax
+              {% render 'icon-review-star', class: 'aw-h-[10px] aw-w-[10px] aw-mb-1' %}
+              good for all skin types
+              {% render 'icon-review-star', class: 'aw-h-[10px] aw-w-[10px] aw-mb-1' %}
+              vegan % cruelty free
+              {% render 'icon-review-star', class: 'aw-h-[10px] aw-w-[10px] aw-mb-1' %}
+              Nourished skin post wax 
+              {% render 'icon-review-star', class: 'aw-h-[10px] aw-w-[10px] aw-mb-1' %}
+              Reduces irritation
+            </div>
+          </div>
+        </div>
+      </div>
+      <style>
+        .image-scroller {
+          width: 100%; /* Adjust as needed */
+          overflow: hidden;
+          white-space: nowrap;
+        }
+      
+        .image-scroller .aw-relative {
+          display: inline-block;
+          animation: scroll-image 20s linear infinite; /* Adjust time as needed */
+        }
+      
+        @keyframes scroll-image {
+          0%, 100% {
+            transform: translateX(0%);
+          }
+          50% {
+            transform: translateX(-60%);
+          }
+        }
+      </style>
+      <div class="tt-wrapper aw-max-w-[480px]">
+        <div>
+          <h2 class="!aw-text-3xl !aw-font-semibold !aw-mb-2">{{ product.title }}</h2>
+          <p class="!aw-text-3xl aw-text-[#2879FE] !aw-font-bold aw-mb-2">{{ product.price | money }}</p>
+        </div>
+        {% form 'product', product %}
+          <input type="hidden" class="input_variant" name="id" :value="selectedVariant">
+          {{ form | payment_terms }}
+          <div class="aw-flex aw-flex-col aw-gap-2">
+            <div class="aw-flex aw-gap-2">
+              <div class="aw-flex-1">
+                <div class="tt-input-counter style-01">
+                  <span 
+                    @click="quantity == 1 ? quantity = 1 : quantity = quantity - 1"
+                    class="minus-btn"></span>
+                  <input type="text" name="quantity" :value="quantity" size="5">
+                  <span
+                    @click="quantity = quantity + 1"
+                    class="plus-btn"
+                  ></span>
+                </div>
+              </div>
+              <div class="aw-flex-1">
+                <button 
+                  class="aw-bg-pink-600 aw-py-4 aw-w-full aw-text-white aw-rounded-md">
+                    <i class="icon-g-46"></i>
+                    {{ "products.general.add_to_cart_html" | t }}
+                </button>
+              </div>
+            </div>
+            {%- if settings.buy_in_one_click -%}
+              {% if settings.terms_cond_checkbox_show %}
+                <div class="checkbox-group prpage-term-conditions-checkbox term-conditions-checkbox-js">
+                  <input type="checkbox" id="prpage-cart-term-conditions-checkbox" value="1">
+                  <label for="prpage-cart-term-conditions-checkbox">
+                    <span class="check"></span>
+                    <span class="box"></span>
+                    {{ settings.terms_cond_checkbox_text }}
+                  </label>
+                </div>
+              {% endif %}
+              <div class="buyinoneclick"
+                  data-buttonname="{{ 'products.general.buy_now_button' | t }}"
+                  data-loading="{{ 'products.general.loading' | t }}">
+                {{ form | payment_button }}
+              </div>
+            {%- endif -%}
+          </div>
+          <div class="product-table-container">
+            <table class="product-table">
+              <thead>
+                <tr>
+                  <th># of {{ unit }}s</th>
+                  <th>Total Price</th>
+                  <th>Price Per {{ unit }}</th>
+                </tr>
+              </thead>
+              <tbody>
+              
+                {% for variant in product.variants %}
+                   {% assign hideThisVariant = false %}
+          
+                  {% for collection in product.collections %}
+                    {% if collection.handle contains 'wholesale-roll-on-wax' and variant.title contains '144 CT' %}
+                      {% assign hideThisVariant = true %}
+                    {% endif %}
+                  {% endfor %}
+                  
+                  {% unless hideThisVariant %}
+                  {% assign variant_title_parts = variant.title | split: "<br>" %}
+                <tr :class="{ 'highlight': selectedVariant == {{ variant.id }} }">
+                  <td>
+                    <input 
+                      type="radio" 
+                      name="variant-radio" 
+                      id="variant-radio-{{ forloop.index }}" 
+                      x-model="selectedVariant"
+                      value="{{ variant.id }}"
+                      class="sr-only">
+                    <label for="variant-radio-{{ forloop.index }}" class="custom-radio"></label>
+                    <span style="margin-left: 10px">{{ variant_title_parts[0] }}</span>
+                    <style>
+                      .custom-radio {
+                        width: 16px;
+                        height: 16px;
+                        border-radius: 100%;
+                        border: 1px solid #303030;
+                      }
+                      [name="variant-radio"]:checked + .custom-radio {
+                        border: 4px solid #303030;
+                        background: #FFFFFF;
+                      }
+                    </style>
+                  </td>
+                  <td>{{ variant.price | money }}</td>
+                  <td>{{ variant_title_parts[1] }}</td>
+                </tr>
+                    {% endunless %}
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        {% endform %}
+      </div>
+    </div>
+  {% endif %}
+</div>
+
+
+{% schema %}
+{
+  "name": "Product Form",
+  "settings": [
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Product"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product Form"
+    }
+  ]
+}
+{% endschema %}
