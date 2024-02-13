@@ -1992,12 +1992,6 @@
           "button_vertical_position": "lowest",
           "greeting_message": "👋 Hi, message us with any questions. We're happy to help!"
         }
-      },
-      "18071877742361319197": {
-        "type": "shopify:\/\/apps\/all-in-1-free-gift-on-cart\/blocks\/instant-load\/5942fed7-47f4-451f-a42f-9077b6214264",
-        "disabled": false,
-        "settings": {
-        }
       }
     }
   }

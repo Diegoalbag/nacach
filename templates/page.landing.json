@@ -2,10 +2,229 @@
   "sections": {
     "main": {
       "type": "page",
-      "settings": {}
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "component_hero_section_RaNXQM": {
+      "type": "component-hero-section",
+      "settings": {
+        "title": "Effortless Wax,  Everytime.",
+        "description": "Elevate your business with wax made in Italy and crafted for excellence.",
+        "button_text": "Buy Now",
+        "button_url": "#"
+      }
+    },
+    "component_features_section_jFAPmB": {
+      "type": "component-features-section",
+      "blocks": {
+        "feature_xYRKrV": {
+          "type": "feature",
+          "settings": {
+            "title": "Trusted by Professionals Worldwide",
+            "icon": "{% render 'icon-reviews-outline' class: 'aw-absolute -aw-translate-x-4 aw-translate-y-4' %}",
+            "subtitle": "Over 500 5 Star Reviews"
+          }
+        },
+        "feature_mtYdp9": {
+          "type": "feature",
+          "settings": {
+            "title": "Gentle Yet Effective Formulas",
+            "icon": "{% render 'icon-molecule' class: 'aw-absolute -aw-translate-x-4 aw-translate-y-4' %}",
+            "subtitle": "Specially Formulated Blends"
+          }
+        },
+        "feature_zpPxwq": {
+          "type": "feature",
+          "settings": {
+            "title": "Profit Boosting",
+            "icon": "{% render 'icon-profit' class: 'aw-absolute -aw-translate-x-4 aw-translate-y-4' %}",
+            "subtitle": "Retain Clients"
+          }
+        }
+      },
+      "block_order": [
+        "feature_xYRKrV",
+        "feature_mtYdp9",
+        "feature_zpPxwq"
+      ],
+      "settings": {
+      }
+    },
+    "component_image_w_features_section_XU7tR3": {
+      "type": "component-image-w-features-section",
+      "blocks": {
+        "left_feature_ChCFkh": {
+          "type": "left-feature",
+          "settings": {
+            "title": "Low Melting Point"
+          }
+        },
+        "left_feature_NQPHtN": {
+          "type": "left-feature",
+          "settings": {
+            "title": "Ideal for All Hair Types"
+          }
+        },
+        "right_feature_w3hFkx": {
+          "type": "right-feature",
+          "settings": {
+            "title": "Organic Argan Oil"
+          }
+        },
+        "right_feature_MJK9AG": {
+          "type": "right-feature",
+          "settings": {
+            "title": "soothes Skin"
+          }
+        }
+      },
+      "block_order": [
+        "left_feature_ChCFkh",
+        "left_feature_NQPHtN",
+        "right_feature_w3hFkx",
+        "right_feature_MJK9AG"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/99f11026ca09d54b45f86514234c07eb.jpg",
+        "title": "maximum hair removal",
+        "subtitle": "Virtually no irritation"
+      }
+    },
+    "component_title_text_bKnXLx": {
+      "type": "component-title-text",
+      "settings": {
+        "title": "Your All-in-One Solution",
+        "text": "Whether you're a seasoned professional or a home waxing enthusiast, our kits provide everything you need for a comprehensive waxing session. Featuring our top-quality waxes, pre and post-wax treatments, and essential tools.",
+        "button_text": "View All",
+        "button_link": "#"
+      }
+    },
+    "component_products_slider_cb6HTm": {
+      "type": "component-products-slider",
+      "blocks": {
+        "product_f6PnqR": {
+          "type": "product",
+          "settings": {
+            "product": "student-hard-waxing-kit",
+            "description": "<ul><li>1 <a href=\"https:\/\/nacach.com\/products\/neptune-wax-warmer?_pos=2&_sid=100c20892&_ss=r\" title=\"neptune wax warmer\">Neptune Hard Wax Warmer<\/a><\/li><li>2 bags <a href=\"https:\/\/nacach.com\/collections\/hard-wax\" title=\"Hard Wax\">hard wax<\/a> (Any preferred hard wax beads of choice)<\/li><li>1 corn starch powder 6 oz<\/li><li>1 small pre-waxing cleanser 8.45 fl oz<\/li><li>1 small post depilatory milk 8.45 fl oz<\/li><li>100 body spatulas<\/li><li>100 eyebrow spatulas<\/li><\/ul>",
+            "button_text": "Buy Now",
+            "button_link": "\/"
+          }
+        },
+        "product_aUGqjp": {
+          "type": "product",
+          "settings": {
+            "product": "master-hard-waxing-kit",
+            "description": "<ul><li><a href=\"https:\/\/nacach.com\/collections\/wax-warmer\/products\/square-5-lbs-hard-wax-warmer\" title=\"Large Capacity Wax Warmer\">1 large capacity warmer <\/a>(5 Lbs. capacity)<\/li><li>10 lbs of <a href=\"https:\/\/nacach.com\/collections\/hard-wax\" title=\"Hard Wax\">hard wax<\/a> (any preferred beads type)<\/li><li>1 <a href=\"https:\/\/nacach.com\/collections\/pre-wax-care\/products\/pre-wax-lotion\" title=\"Pre Wax Lotion\">pre waxing lotion<\/a> 16.9 fl oz<\/li><li>1 <a href=\"https:\/\/nacach.com\/collections\/pre-wax-care\/products\/corn-starch-powder\" title=\"Corn Starch Powder\">corn starch powder<\/a> 6 oz<\/li><li>1 <a href=\"https:\/\/nacach.com\/collections\/post-wax-care\" title=\"Post Wax Care\">post waxing<\/a> product (any type of your  choice)<\/li><li>1 post-waxing pomegranate body oil<\/li><li>300 body spatulas<\/li><li>200 eyebrows spatulas<\/li><\/ul>",
+            "button_text": "Buy Now",
+            "button_link": "\/"
+          }
+        },
+        "product_MCDpYX": {
+          "type": "product",
+          "settings": {
+            "product": "professional-hard-waxing-kit",
+            "description": "<ul><li>1 hard wax <a href=\"https:\/\/nacach.com\/collections\/wax-warmer\/products\/heater-with-digital-thermostat-2-lbs\">heater with digital thermostat<\/a> - 2 Lbs. capacity<\/li><li>5 bags <a href=\"https:\/\/nacach.com\/collections\/hard-wax\" title=\"Hard Wax\">hard wax<\/a> (any preferred beads type)<\/li><li>1 <a href=\"https:\/\/nacach.com\/collections\/pre-wax-care\/products\/pre-wax-lotion\" title=\"Pre Wax Lotion\">pre waxing lotion<\/a> 16.9 fl oz<\/li><li>1 <a href=\"https:\/\/nacach.com\/collections\/pre-wax-care\/products\/corn-starch-powder\" title=\"Corn Starch Powder\">corn starch powder<\/a> 6 oz<\/li><li>1 post-wax depilatory product 16.9 fl oz (any type of your choice)<\/li><li>200 body spatulas<\/li><li>100 eyebrows spatulas<\/li><\/ul>",
+            "button_text": "Buy Now",
+            "button_link": "\/"
+          }
+        },
+        "product_KBngYx": {
+          "type": "product",
+          "settings": {
+            "product": "soft-wax-kit",
+            "description": "<ul><li>1 can professional wax warmer<\/li><li>2 cans of soft wax (any type of your choice)<\/li><li>1 pre waxing lotion 16.9 fl oz<\/li><li>1 your choice of post wax care<\/li><li>1 pack of 100 non-woven pre cut waxing strips<\/li><li>100 disposable eyebrow spatulas<\/li><li>100 disposable body wax spatulas<\/li><\/ul>",
+            "button_text": "Buy Now",
+            "button_link": "\/"
+          }
+        }
+      },
+      "block_order": [
+        "product_f6PnqR",
+        "product_aUGqjp",
+        "product_MCDpYX",
+        "product_KBngYx"
+      ],
+      "settings": {
+      }
+    },
+    "component_reviews_section_JTt4bT": {
+      "type": "component-reviews-section",
+      "blocks": {
+        "review_UnNVPR": {
+          "type": "review",
+          "settings": {
+            "review": "This wax is amazing! Extremely effective! Leaves skin feeling smooth.. Love the consistency.. Definitely some of the best wax iv ever used! In love!",
+            "name": "Terry A."
+          }
+        },
+        "review_JjnkAy": {
+          "type": "review",
+          "settings": {
+            "review": "This wax is amazing! Extremely effective! Leaves skin feeling smooth.. Love the consistency.. Definitely some of the best wax iv ever used! In love!",
+            "name": "Terry A."
+          }
+        },
+        "review_WirjAn": {
+          "type": "review",
+          "settings": {
+            "review": "This wax is amazing! Extremely effective! Leaves skin feeling smooth.. Love the consistency.. Definitely some of the best wax iv ever used! In love!",
+            "name": "Terry A."
+          }
+        },
+        "review_tcJtJb": {
+          "type": "review",
+          "settings": {
+            "review": "This wax is amazing! Extremely effective! Leaves skin feeling smooth.. Love the consistency.. Definitely some of the best wax iv ever used! In love!",
+            "name": "Terry A."
+          }
+        },
+        "review_YL8qmN": {
+          "type": "review",
+          "settings": {
+            "review": "This wax is amazing! Extremely effective! Leaves skin feeling smooth.. Love the consistency.. Definitely some of the best wax iv ever used! In love!",
+            "name": "Terry A."
+          }
+        },
+        "review_R9kVbC": {
+          "type": "review",
+          "settings": {
+            "review": "This wax is amazing! Extremely effective! Leaves skin feeling smooth.. Love the consistency.. Definitely some of the best wax iv ever used! In love!",
+            "name": "Terry A."
+          }
+        }
+      },
+      "block_order": [
+        "review_UnNVPR",
+        "review_JjnkAy",
+        "review_WirjAn",
+        "review_tcJtJb",
+        "review_YL8qmN",
+        "review_R9kVbC"
+      ],
+      "settings": {
+        "section_title": "Real Reviews From Real Customers"
+      }
+    },
+    "component_newsletter_9mB3ww": {
+      "type": "component-newsletter",
+      "settings": {
+        "title": "About Nacach Wax",
+        "description": "For over three decades, we've been dedicated to providing estheticians and beauty enthusiasts with superior waxing products. Crafted in Italy with the finest natural ingredients, our range is designed to deliver a seamless waxing experience, ensuring comfort and effectiveness.",
+        "button_text": "View All",
+        "button_link": "#"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "component_hero_section_RaNXQM",
+    "component_features_section_jFAPmB",
+    "component_image_w_features_section_XU7tR3",
+    "component_title_text_bKnXLx",
+    "component_products_slider_cb6HTm",
+    "component_reviews_section_JTt4bT",
+    "component_newsletter_9mB3ww"
   ]
 }
