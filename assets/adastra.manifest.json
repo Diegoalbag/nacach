@@ -1,25 +1,40 @@
 {
+  "_vex-chunk-utils-78c3c92c.js": {
+    "file": "vex-chunk-utils-78c3c92c.js"
+  },
   "node_modules/alpinejs/dist/module.esm.js": {
     "file": "vex-chunk-module.esm-87422a9e.js",
     "isDynamicEntry": true,
     "src": "node_modules/alpinejs/dist/module.esm.js"
   },
+  "node_modules/swiper/modules/index.mjs": {
+    "file": "vex-chunk-index-fb481ddd.js",
+    "imports": [
+      "_vex-chunk-utils-78c3c92c.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "node_modules/swiper/modules/index.mjs"
+  },
   "node_modules/swiper/swiper.mjs": {
-    "file": "vex-chunk-swiper-06be5c24.js",
+    "file": "vex-chunk-swiper-03253105.js",
+    "imports": [
+      "_vex-chunk-utils-78c3c92c.js"
+    ],
     "isDynamicEntry": true,
     "src": "node_modules/swiper/swiper.mjs"
   },
   "src/entrypoints/base.css": {
-    "file": "vex-base-a5b8750b.css",
+    "file": "vex-base-cc5b6450.css",
     "isEntry": true,
     "src": "src/entrypoints/base.css"
   },
   "src/entrypoints/index.ts": {
     "dynamicImports": [
       "node_modules/alpinejs/dist/module.esm.js",
-      "node_modules/swiper/swiper.mjs"
+      "node_modules/swiper/swiper.mjs",
+      "node_modules/swiper/modules/index.mjs"
     ],
-    "file": "vex-index-d12b3a8f.js",
+    "file": "vex-index-cf3614d2.js",
     "isEntry": true,
     "src": "src/entrypoints/index.ts"
   }

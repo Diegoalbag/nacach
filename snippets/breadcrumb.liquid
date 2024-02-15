@@ -2,7 +2,7 @@
 Documentation - http://docs.shopify.com/support/your-website/navigation/creating-a-breadcrumb-navigation
 {%- endcomment -%}
 
-{%- unless template == 'index' -%}
+{%- unless template == 'index' or template == 'page.landing' -%}
 <div class="tt-breadcrumb">
   <div class="container{% if settings.breadcrumbs_fullwidth %}-fluid{% endif %}">
     <ul>
