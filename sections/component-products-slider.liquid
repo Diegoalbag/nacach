@@ -41,7 +41,45 @@
           {% assign description = block.settings.description %}
           {% comment %} {% assign product = section.blocks[0].settings.product %} {% endcomment %}
           {% comment %} {% assign description = section.blocks[0].settings.description %} {% endcomment %}
-          <div class="swiper-slide aw-flex aw-flex-col aw-gap-4">
+          <div
+            x-data="{
+              id : {{ product.first_available_variant.id }},
+              submitForm: function() {
+                fetch('/cart/add.js', {
+                  method: 'POST',
+                  headers: {
+                    'Content-Type': 'application/json',
+                    'X-Requested-With': 'XMLHttpRequest'
+                  },
+                  body: JSON.stringify({
+                    items: [{
+                      id: this.id,
+                      quantity: 1
+                    }]
+                  })
+                })
+                .then(response => {
+                  if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                  }
+                  return response.json();
+                })
+                .then(data => {
+                  console.log('Success:', data);
+                  Shopify.getCart();
+                  {% comment %} let ttCart = document.querySelector('.tt-cart');
+                  if (!ttCart.classList.contains('active')) {
+                    ttCart.querySelector('.tt-dropdown-toggle').click();
+                  } {% endcomment %}
+                })
+                .catch((error) => {
+                  console.error('Error:', error);
+                  // Handle error here (e.g., show error message)
+                });
+              }
+            }"
+            class="swiper-slide aw-flex aw-flex-col aw-gap-4"
+          >
             <div class="aw-relative aw-h-min aw-rounded-lg aw-px-10">
               <img src="{{ product.featured_image | img_url: '350x' }}" alt="{{ product.image.alt }}" class="aw-w-full aw-h-auto aw-aspect-square">
             </div>
@@ -61,7 +99,7 @@
                     {{ product.selected_or_first_available_variant.compare_at_price | money }}
                   </s>
                 </div>
-                {%- else -%}
+              {%- else -%}
                 <div class="tt-price">
                   <span>
                     {% if product.price_min != product.price_max %}
@@ -77,13 +115,14 @@
             <div class="product-list-description aw-p-5 aw-bg-[#FFF5F7] aw-rounded-md">
               {{ description }}
               {%- if block.settings.button_text != blank and product.url != blank -%}
-                <a
-                  role="button"
+                <button
+                  type="button"
+                  @click="submitForm()"
                   href="{{ product.url }}"
                   class="aw-block aw-uppercase aw-text-center aw-w-full aw-text-base aw-font-medium aw-rounded-md aw-py-3 aw-px-5 aw-mt-5 aw-border-2 aw-border-pink-600 aw-text-pink-600 aw-bg-white aw-transition-all aw-duration-300 hover:aw-bg-pink-600 hover:aw-text-white"
                 >
                   {{ block.settings.button_text }}
-                </a>
+                </button>
               {%- endif -%}
             </div>
           </div>
@@ -91,13 +130,13 @@
         {% comment %} {% endfor %} {% endcomment %}
       {% endfor %}
     </div>
-
-    <div class="button-prev aw-absolute aw-bg-gray-100 aw-rounded-full aw-z-10 aw-top-1/2 -aw-translate-y-1/2 aw-right-0 aw-w-10 aw-h-10 aw-flex aw-justify-center aw-items-center">
+    <div class="button-next aw-absolute aw-bg-gray-100 aw-rounded-full aw-z-10 aw-top-1/2 -aw-translate-y-1/2 aw-right-0 aw-w-10 aw-h-10 aw-flex aw-justify-center aw-items-center">
       {% render 'icon-right' %}
     </div>
     <div class="button-prev aw-absolute aw-bg-gray-100 aw-rounded-full aw-z-10 aw-top-1/2 -aw-translate-y-1/2 aw-left-0 aw-rotate-180 aw-w-10 aw-h-10 aw-flex aw-justify-center aw-items-center">
       {% render 'icon-right' %}
     </div> 
+
 
   </div>
 </div>

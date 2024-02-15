@@ -3,6 +3,47 @@
   x-data="{ 
     selectedVariant: {{ product.first_available_variant.id }},
     quantity: 1,
+    productForm: null,
+    init: async function() {
+      this.productForm = document.getElementById('product-form');
+      this.productForm.addEventListener('submit', this.submitForm.bind(this));
+    },
+    submitForm(event) {
+      event.preventDefault();
+      console.log(this.selectedVariant);
+      console.log(this.quantity);
+      fetch('/cart/add.js', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'X-Requested-With': 'XMLHttpRequest'
+        },
+        body: JSON.stringify({
+          items: [{
+            id: this.selectedVariant,
+            quantity: this.quantity
+          }]
+        })
+      })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then(data => {
+        console.log('Success:', data);
+        Shopify.getCart();
+        {% comment %} let ttCart = document.querySelector('.tt-cart');
+        if (!ttCart.classList.contains('active')) {
+          ttCart.querySelector('.tt-dropdown-toggle').click();
+        } {% endcomment %}
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+        // Handle error here (e.g., show error message)
+      });
+    }
   }"
   id="product-form-target"
   class="aw-px-5 aw-py-12">
@@ -124,7 +165,7 @@
           <h2 class="!aw-text-3xl !aw-font-semibold !aw-mb-2">{{ product.title }}</h2>
           <p class="!aw-text-3xl aw-text-[#2879FE] !aw-font-bold aw-mb-2">{{ product.price | money }}</p>
         </div>
-        {% form 'product', product %}
+        {% form 'product', product, id: 'product-form' %}
           <input type="hidden" class="input_variant" name="id" :value="selectedVariant">
           {{ form | payment_terms }}
           <div class="aw-flex aw-flex-col aw-gap-2">
@@ -134,7 +175,7 @@
                   <span 
                     @click="quantity == 1 ? quantity = 1 : quantity = quantity - 1"
                     class="minus-btn"></span>
-                  <input type="text" name="quantity" :value="quantity" size="5">
+                  <input type="text" name="quantitySelector" :value="quantity" size="5">
                   <span
                     @click="quantity = quantity + 1"
                     class="plus-btn"
