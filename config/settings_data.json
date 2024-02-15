@@ -863,6 +863,7 @@
         "blocks": {
           "1516617959080": {
             "type": "footer_links",
+            "disabled": true,
             "settings": {
               "show_content": true,
               "linklist_t1": "COLLECTIONS",
@@ -914,6 +915,7 @@
           },
           "1530207572616": {
             "type": "subscribe_form",
+            "disabled": true,
             "settings": {
               "show_content": true,
               "text1": "CATCH THE LATEST",
@@ -948,7 +950,7 @@
           "logo_text": "Nacach",
           "logo": "shopify:\/\/shop_images\/nacach-logo_deb74f3e-c1ee-4bfd-a62a-edb8ad2a944a.jpg",
           "logo_max_width": "130",
-          "footer_address": "© Nacach Wax 2022. All Rights Reserved. <a href=\"https:\/\/notchsolutions.com\">Website Design & Marketing <\/a> by Notch Solutions",
+          "footer_address": "© Nacach Wax 2024. All Rights Reserved.",
           "footer_col": true
         }
       },
@@ -968,6 +970,7 @@
           },
           "1522754394860": {
             "type": "topbar",
+            "disabled": true,
             "settings": {
               "show_content": true,
               "text": "<div class=\"tt-box-info\" style=\"color:#fff\">\n<ul>\n<li>\n<i class=\"icon-f-93\"><\/i><a href=\"tel:8664601460\" style=\"color:#fff\">(866)460-1460<\/a>\n<\/li>\n<li>\n<i class=\"icon-f-52\"><\/i><a href=\"mailto:hello@nacach.com\" style=\"color:#fff\"> hello@nacach.com<\/a>\n<\/li>\n<\/ul>\n<\/div>",
@@ -982,6 +985,7 @@
           },
           "1523361758164": {
             "type": "infobar",
+            "disabled": true,
             "settings": {
               "show_content": true,
               "show_content_index": false,
@@ -997,6 +1001,7 @@
           },
           "2d98ca2d-ffaf-4c7d-8521-9101370fa35c": {
             "type": "megamenu",
+            "disabled": true,
             "settings": {
               "linklist": "",
               "newnavigation_item": "Wax",
@@ -1034,6 +1039,7 @@
           },
           "4f2bc518-c726-4fc4-b2b8-6277b0b848ec": {
             "type": "megamenu",
+            "disabled": true,
             "settings": {
               "linklist": "",
               "newnavigation_item": "WAX",
@@ -1080,7 +1086,7 @@
         "settings": {
           "header_sticky_header": true,
           "small_header_height": true,
-          "main_menu_selected": "new-menu",
+          "main_menu_selected": "",
           "header_fullwidth": false,
           "showsucklogodesktop": true,
           "logo_max_width_d": "125",
